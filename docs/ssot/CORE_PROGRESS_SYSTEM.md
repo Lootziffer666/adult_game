@@ -1,23 +1,44 @@
 # CORE_PROGRESS_SYSTEM
 
-## Central progression formula (minimal)
-Progress is computed as a hidden interaction of:
+## Core progression formula (current baseline)
 
-`context (location + phase + recent events)`
-`+ behavioral consistency`
-`+ relationship vectors (A/B/R placeholders)`
-`+ world reaction (rumor/public standing)`
-`+ delayed consequence queue`
+`observation / hint -> interpretation -> timing + context -> action -> world reaction -> new information`
 
-## Required state groups
-- **Time:** day, minutes, phase, nightly tick hooks.
-- **World:** per-location rumor heat, optional rumor global aggregate, public image axes.
-- **Characters (prototype roles):** A/B/R with trust/attention/attraction/exclusivity-compatible fields.
-- **Story control:** flags, pending story/event queue.
-- **Behavior memory:** last_style + consistency drift.
+This loop is the main thing being validated.
 
-## Progression rules
-1. Choices update hidden state, not player-visible bars.
-2. Event eligibility is condition + priority based.
-3. Some effects apply immediately; some are delayed and resolved by later context.
-4. Nightly/system ticks update long-horizon pressure (cleanliness, rumor cooling, etc.).
+## Required distinction: internal vs player-facing
+
+### 1) Hidden internal state (system side)
+Examples:
+- Context/timing flags.
+- Relationship/reaction variables (placeholder-role compatible).
+- Event eligibility and delayed consequence state.
+
+These values can be hidden from normal player UI.
+
+### 2) Player-facing evidence (experience side)
+The player still needs lightweight evidence that state changed, such as:
+- Changed dialogue tone or availability.
+- New hint/reminder line.
+- Updated event log/journal entry.
+- Altered world reaction cue.
+
+The prototype is **not** memory-only by design.
+
+## Mandatory baseline systems (for proof)
+1. Context + timing-sensitive event triggering.
+2. World reaction hooks that can change future information.
+3. Lightweight hint/goal/completion output so inference remains playable.
+4. Minimal delayed consequence behavior.
+
+## Optional/deferred modifiers (not mandatory for shortest proof)
+- Rumor/public/hygiene pressure stacks.
+- Larger social reputation simulations.
+- Expanded multi-layer modifier systems.
+
+These are valid if they help the proof, but they are not required equally at baseline.
+
+## Non-goals for current progression proof
+- "Raise affection until scene unlock" as dominant loop.
+- Pure inventory-combination chain gameplay.
+- Explicit route picker as primary progression UX.

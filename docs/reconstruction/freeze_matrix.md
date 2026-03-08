@@ -1,18 +1,16 @@
-# Freeze Matrix
+# Freeze Matrix (Updated)
 
 | Topic | Current best reading | Supporting files | Contradicting files | Status (green/yellow/red) | Merge now? | Notes |
 |---|---|---|---|---|---|---|
-| Engine target | Ren'Py remains implementation baseline | Analyse_ Adult-Game_Startplan, Design-Sheet Erotica, GAME DESIGN DOCUMENT | none explicit | green | yes | No migration commitment found |
-| Hidden-state philosophy | Player should feel systems, not read bars | FINALES GESAMTDOKUMENT, UI-PHILOSOPHIE, GAME DESIGN DOCUMENT | none major | green | yes | Core identity anchor |
-| Visible stat UI | Numeric debug/state should not be player-facing by default | UI-PHILOSOPHIE, FINALES GESAMTDOKUMENT | prototype screens exposing debug values | yellow | bounded | Keep optional dev toggle only |
-| Time phases + nightly decay | Day/phase cycle and nightly hygiene/rumor decay | Analyse_ Startplan, VERSION 2, RENPY-PROJEKTGERÜST | none major | green | yes | Already partially in code |
-| Rumor model | Per-location rumor with optional global coupling | Analyse_ Startplan, VERSION 2, EVENT docs | docs with simpler scalar rumor | yellow | bounded | Preserve hook; avoid overfitting |
-| A/B structure | A/B as hidden relational vectors, not explicit route menu | GAME DESIGN DOCUMENT, Startplan | early route-like slice framing | green | yes | Keep as internal state names for now |
-| Canon story/lore specifics | Lore remains provisional; avoid invented canon | FINALES GESAMTDOKUMENT (open contradictions), Startplan (missing lore) | steampunk-strong docs asserting specificity | yellow | no | Needs human decision |
-| Figure identities | A/B/R functional roles are usable as prototypes | AAA GDD, OVERVIEW 2ND STAGE | files with deeper but unstable characterization | yellow | bounded | Keep placeholders, no hard canon bios |
-| Intimacy baseline | Build intimacy systems before explicit content expansion | FINALES GESAMTDOKUMENT, smart-porn manifesto, VERSION 2 | scene drafts treating explicit beats as fixed | green | yes | Mechanics-first accepted |
-| Event architecture | Priority/condition event checker + delayed consequences | EVENT-TABELLE, EVENT-KETTEN, E_PUBLIC_FRICTION, PROJEKTGERÜST | none major | green | yes | Implement minimal robust scheduler |
-| UI visual motif | Brass/glass/smoke warm low-noise style is useful pattern library | UI-PHILOSOPHIE, VISUELLE DNA, PROMPT docs | none major | yellow | no | Treat as art pattern, not strict canon |
-| Production timeline promises | 14-day schedule is planning artifact only | DAILY PLAN, Dev Task Breakdown | n/a | red | no | Do not encode as SSOT requirement |
-| Brand/logo docs as canon | Brand/logo chats are non-game canon | Logo docs, Brand sheet | n/a | red | no | Archive only |
-| Empty/fragment files | Peer_review_beta and Untitled are non-authoritative | Peer_review_beta, Unbenanntes Dokument | n/a | red | no | Keep but ignore for SSOT |
+| Project phase | System-validation prototype, not story-production canon | Clarified direction, ssot updates | legacy story-forward slice docs | green | yes | Foundational framing |
+| Engine stance | Ren'Py-first until proven insufficient | Clarified direction + legacy engine docs | none strong | green | yes | No proactive migration plan |
+| Story canon status | No finalized story canon yet | Clarified direction + unresolved legacy contradictions | legacy docs asserting fixed beats | green | yes | Keep uncertainty explicit |
+| Character canon status | No finalized cast canon; placeholders allowed | Clarified direction + prototype role usage | legacy files with over-specified cast assumptions | green | yes | Do not over-promote A/B/R identities |
+| Core loop formula | observation/hint -> interpretation -> timing+context -> action -> reaction -> new info | Clarified direction | none strong | green | yes | Primary validation target |
+| Hint/goal/event output | Lightweight player-facing support is required | Clarified direction | memory-only interpretations | green | yes | Avoid heavy quest UI |
+| Object/evidence logic | Bounded object/evidence interactions are compatible | Clarified direction | old anti-item overreactions | green | yes | Ban brute-force chains, not all objects |
+| Pressure systems (rumor/public/hygiene) | Optional modifiers unless needed for proof | Clarified direction + scope docs | legacy stacks treating all as baseline | yellow | bounded | Add only when validation needs them |
+| Old 3-room slice structure | Useful legacy rhythm, not mandatory current canon | Vertical slice docs as references | none | yellow | no | Keep in pattern library only |
+| Old A/B route framing | Legacy structure reference, not current mandatory macro-route | legacy slice docs | clarified current phase | yellow | no | Revisit in later story phase |
+| Date-bound production plans | Planning artifacts, not SSOT truth | daily/task docs | none | red | no | Archive only |
+| Brand/logo docs | Non-game-canon material | brand docs | none | red | no | Keep separate from gameplay SSOT |

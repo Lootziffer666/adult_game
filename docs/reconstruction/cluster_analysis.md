@@ -1,69 +1,32 @@
-# Cluster Analysis (Conflict-Aware)
+# Cluster Analysis (Updated for Current Clarified Phase)
 
-## 1) Core game identity
-- **Stable agreements:** Hidden-state social simulation, experiential feedback, no explicit "right choice" framing.
-- **Contradictions:** Some docs frame a tight steampunk VN product; others frame broader adult-system experiments or even parallel products.
-- **Probable phases:** Early genre template -> vertical-slice concretion -> late meta consolidation with explicit contradictions.
-- **Current best reading:** Keep one implementable Ren'Py social-systems baseline; treat extra product framings as legacy drift.
-- **Preserve as legacy pattern:** Pitch-heavy "smart porn" manifest language.
+## A. Current prototype truth (high confidence)
+- The project is in **system-validation**, not canonized story production.
+- Core validation target is inference progression: interpretation + timing + context + reaction.
+- Ren'Py remains the active implementation path unless real limits are demonstrated.
+- Placeholder roles/content are acceptable as scaffolding.
+- Player-facing support (hints/goals/completion reminders) is needed in lightweight form.
 
-## 2) Progression logic
-- **Stable agreements:** Progression = behavior patterns over time (consistency, timing, social reaction), not a transparent XP bar.
-- **Contradictions:** Some slice docs still imply visibly staged A/B progression beats.
-- **Current best reading:** Hidden progression with condition-gated events and delayed consequences.
+## B. Legacy pattern material (useful, non-canonical)
+- A/B contrast structures.
+- Public-friction -> private-aftermath scene cadence.
+- Three-room vertical-slice rhythms.
+- Tone/atmosphere/UI/animation references.
 
-## 3) Inference / puzzle logic
-- **Stable agreements:** Player infers system state through dialogue tone, scene staging, rumors, and time context.
-- **Contradictions:** None major; only implementation depth varies.
-- **Current best reading:** Keep inference-first and avoid explicit state exposition in UI.
+These are pattern libraries, not present-tense project truth.
 
-## 4) Route structure
-- **Stable agreements:** A/B relational vectors exist.
-- **Contradictions:** Old docs frame route-like explicit split; later docs prefer hidden drift lines and mixed consequences.
-- **Current best reading:** Retain A/B as internal vectors, not explicit route selection UX.
-- **Legacy-only pattern:** Hard route-lock framing from early vertical-slice notes.
+## C. Common overreach risks to avoid
+1. Treating old vertical-slice structure as mandatory SSOT.
+2. Treating A/B/R placeholders as finalized cast canon.
+3. Treating pressure systems (rumor/public/hygiene) as always-required baseline.
+4. Treating early story drafts as fixed narrative canon.
 
-## 5) Story structure
-- **Stable agreements:** Public tension -> private aftermath -> escalation rhythm appears repeatedly.
-- **Contradictions:** Canonical setting/story certainty is unresolved (specific steampunk narrative vs abstract experiential shell).
-- **Current best reading:** Preserve only system-ready micro-beat structure; avoid full lore canon claims.
+## D. Contradictions still active
+- Single project vs multi-line exploratory material.
+- Steampunk-specific framing vs setting-agnostic prototype framing.
+- Minimal proof scope vs feature-heavy pressure-stack proposals.
 
-## 6) Character model
-- **Stable agreements:** Figure A (trust/consistency axis), Figure B (attraction/risk axis), Figure R (pressure/intervention).
-- **Contradictions:** Identity depth and permanence of these placeholders vary by document.
-- **Current best reading:** Keep them as functional prototype roles, not finalized canon biographies.
-
-## 7) Timing / routines
-- **Stable agreements:** Time phases, day rollover, nightly hygiene/rumor adjustment recur across files.
-- **Contradictions:** Idle map timer appears in some docs but not all.
-- **Current best reading:** Keep core phase/day/nightly hooks; mark map-idle advancement as unresolved optional.
-
-## 8) World reaction
-- **Stable agreements:** Rumor and public standing should react to social behavior; effects can be delayed.
-- **Contradictions:** Granularity differs (single rumor scalar vs per-location + global coupling).
-- **Current best reading:** Keep per-location rumor + optional global aggregator hook.
-
-## 9) Relationship + intimacy model
-- **Stable agreements:** Intimacy is processual, context-dependent, and tied to trust/attraction/tension dynamics.
-- **Contradictions:** Degree of explicit erotic content in baseline slice is inconsistent.
-- **Current best reading:** Keep mechanics scaffolding; do not force explicit content canon in SSOT.
-
-## 10) UI / visual language
-- **Stable agreements:** Minimal, atmospheric, material UI language (brass/glass/smoke), no stat bars.
-- **Contradictions:** Debug-heavy overlays appear in prototype code.
-- **Current best reading:** Keep debug behind opt-in toggle only.
-
-## 11) Engine / implementation
-- **Stable agreements:** Ren'Py is the current delivery engine.
-- **Contradictions:** No serious contradictory migration plan inside legacy corpus.
-- **Current best reading:** Continue Ren'Py; no Godot migration assumptions.
-
-## 12) Vertical-slice scope
-- **Stable agreements:** Three-location loop + event checks + hidden state gives minimal playable baseline.
-- **Contradictions:** Some docs push broad feature expansion too early.
-- **Current best reading:** Freeze on minimal systems validity before content growth.
-
-## 13) Production sequencing
-- **Stable agreements:** Foundation first, then loop, then deeper systems, then polish.
-- **Contradictions:** Calendar aggressiveness differs (14-day plan vs phased realism).
-- **Current best reading:** Use phased priorities, not absolute date promises.
+## E. Current best reading for merge behavior
+- Merge only what is needed to validate the core inference loop.
+- Preserve legacy slices as references.
+- Keep unresolved structural decisions visible until explicitly decided.

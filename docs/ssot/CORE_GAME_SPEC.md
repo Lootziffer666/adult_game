@@ -1,18 +1,30 @@
 # CORE_GAME_SPEC
 
-## What the game IS (current best consistent reading)
-- A Ren'Py-based narrative/social simulation prototype driven by **hidden state**, **time context**, and **world reaction**.
-- A systems-first adult-leaning experience where intimacy/tension emerges from behavior patterns, not simple unlock counters.
-- A loop centered on moving between a small set of social spaces, triggering condition-based events, and accumulating delayed consequences.
+## Current phase (authoritative)
+The project is currently a **system-validation prototype**.
+Its purpose is to test whether narrative inference progression (interpretation + timing + context + world reaction) is actually fun and reliable.
 
-## What the game is NOT (at current SSOT baseline)
-- Not a fully canonized lore/story bible with locked character biographies.
-- Not a route-picker VN where A/B are explicit menu routes presented to the player.
-- Not a stat-heavy management UI with visible trust/attraction bars.
-- Not a migration-to-Godot project in the current phase.
+This is **not** yet a story-production phase.
 
-## Non-negotiable design principles
-1. Inference-first feedback (tone, staging, timing, reaction) over explicit scoring UI.
-2. No fabricated canon content where legacy sources conflict.
-3. System validity before content volume.
-4. Legacy scene drafts remain references unless validated by system-level consistency.
+## What the project IS right now
+- A VN-style prototype in **Ren'Py-first** implementation.
+- A testbed for progression through interpretation, not explicit route-picking.
+- A design where player understanding should come from observed consequences, contextual shifts, and repeatable system behavior.
+- A prototype that may use placeholder roles/content as scaffolding while core interaction logic is validated.
+
+## What the project is NOT right now
+- Not a finalized story canon.
+- Not a finalized cast canon.
+- Not a fixed world bible with locked setting details.
+- Not a classic visible-route chooser.
+- Not a heavy stat-management UI game.
+- Not a Godot-migration project (unless Ren'Py proves to be a hard blocker later).
+
+## Current identity sentence
+**A narrative inference prototype with VN presentation, built to test whether progression via interpretation, timing, context, and world reaction works.**
+
+## Truthfulness rules for this phase
+1. Keep claims narrow and testable.
+2. Mark uncertainty explicitly.
+3. Treat legacy vertical-slice content as references unless re-validated in this phase.
+4. Do not promote placeholder story/characters into canon by default.

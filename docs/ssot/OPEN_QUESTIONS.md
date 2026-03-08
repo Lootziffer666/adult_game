@@ -1,9 +1,25 @@
 # OPEN_QUESTIONS
 
-1. **Single product vs portfolio ambiguity**: Are social-steampunk and explicit adult-system documents one game or adjacent projects?
-2. **Lore specificity level**: Should the steampunk setting be hard canon now, or remain an abstract prototype skin?
-3. **A/B/R permanence**: Are these final cast anchors or temporary system placeholders?
-4. **Rumor model depth**: Keep scalar simplification or implement full local<->global propagation immediately?
-5. **Map idle-time behavior**: Should passive waiting always advance time in current build?
-6. **Debug visibility policy**: Should hidden state be fully invisible in distributed builds, with dev-only toggles only?
-7. **Adult content threshold for baseline demo**: How far should explicitness go before system foundation is complete?
+1. **Prototype setting skin:**
+   Keep steampunk as temporary skin, or move to a more neutral presentation during proof phase?
+
+2. **First playable test size:**
+   What is the smallest vertical test that still validates the inference loop?
+
+3. **Hint/journal/event-output form:**
+   Which lightweight UX format should be used first (single feed, compact journal, objective cards, hybrid)?
+
+4. **Functional relationship role count:**
+   Should first proof use one role, two roles, or more than two placeholder roles?
+
+5. **Bounded object/evidence depth:**
+   How much object/evidence interaction is needed in prototype v1 to test interpretation quality?
+
+6. **Optional pressure systems threshold:**
+   At what point do rumor/public/hygiene modifiers become necessary instead of optional?
+
+7. **Route-like macrostructure timing:**
+   When (if ever) should explicit macro-route structure return after system validation?
+
+8. **Ren'Py limitation criteria:**
+   What concrete failure conditions would justify evaluating a post-Ren'Py engine path?

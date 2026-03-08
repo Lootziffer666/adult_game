@@ -20,6 +20,7 @@ label ev_public_friction:
                 $ world.dominance_image += 0.4
                 $ world.rumor_heat["salon"] += 0.3
                 $ world.chars["B"].attraction += 0.3
+                $ queue_delayed_effect("ev_aftershock_rumor", where=["bridge", "home"])
                 
                 "„Du redest viel für jemanden ohne Substanz.""
                 "Der Raum wird still."
@@ -83,4 +84,11 @@ label ev_bridge_B:
                 "„Nicht alles muss explodieren.""
                 "Sie lächelt, aber bleibt auf Abstand."
     
+    return
+
+
+label ev_aftershock_rumor:
+    "Später fällt dir auf, wie schnell sich Blicke herumsprechen."
+    $ world.public_standing = max(-2.0, world.public_standing - 0.1)
+    $ world.memory_log.append("Aftershock: public tension echoed beyond the original scene.")
     return

@@ -25,11 +25,18 @@ init -10 python:
         dominance_image: float = 0.0
         reliability_image: float = 0.0
         rumor_heat: dict = field(default_factory=lambda: {"salon": 0.0, "home": 0.0, "bridge": 0.0})
+        rumor_global: float = 0.0
         location_mood: dict = field(default_factory=lambda: {"salon": 0.0, "home": 0.0, "bridge": 0.0})
         
         # Story / Flags
         flags: set = field(default_factory=set)
         pending_story: set = field(default_factory=set)
+        delayed_effects: list = field(default_factory=list)
+
+        # Context/Hints (minimal SSOT scaffolding)
+        context_tags: set = field(default_factory=set)
+        memory_log: list = field(default_factory=list)
+        objective_stub: str = "Observe reactions and identify patterns."
         
         # Exclusivity tension
         exclusivity_tension: float = 0.0

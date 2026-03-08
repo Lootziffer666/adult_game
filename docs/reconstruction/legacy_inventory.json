@@ -1,0 +1,322 @@
+[
+  {
+    "path": "legacy/INK & IRON GLOW – BRAND SHEET (FINAL).docx",
+    "title": "INK & IRON GLOW – BRAND SHEET (FINAL)",
+    "inferred_order": 1,
+    "inferred_datetime": "2026-02-18 20:43",
+    "type": "brand / identity doc",
+    "summary": "Studio-/Brand-Guideline (Werte, Farbwelt, Tonalität, Exportregeln). Für Spielsysteme nur indirekt relevant; stärkt Designprinzip \"warmes, nicht wertendes\" Erlebnis. Keine belastbaren Gameplay-Regeln.",
+    "extracted_claim_count": 32,
+    "probable_status": "legacy"
+  },
+  {
+    "path": "legacy/Design-Sheet Erotica.docx",
+    "title": "Design-Sheet Erotica",
+    "inferred_order": 2,
+    "inferred_datetime": "2026-02-18 21:53",
+    "type": "mixed notes",
+    "summary": "Frühes Strukturdokument für Adult-VN-Produktionsmodell. Enthält Standard-Loop (Explore→Dialog→Werte→Events), Engine-Wahl Ren'Py, Scope- und Risikoabschnitte. Stark template-/genre-orientiert, teilweise generisch.",
+    "extracted_claim_count": 69,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/ChatGPT-Teilgespräch · Logo Design Anfrage.md.docx",
+    "title": "ChatGPT-Teilgespräch · Logo Design Anfrage.md",
+    "inferred_order": 3,
+    "inferred_datetime": "2026-02-18 21:55",
+    "type": "brand / identity doc",
+    "summary": "Langer Logo-Design-Chatexport. Fokus auf Corporate Branding, Logogeometrie, Farben, Motion, Markenwörter. Kein belastbarer Beitrag zu Spielmechanik.",
+    "extracted_claim_count": 1294,
+    "probable_status": "legacy"
+  },
+  {
+    "path": "legacy/# TeilgesprÃ¤ch Â· Logo Design Anfrage.docx",
+    "title": "# TeilgesprÃ¤ch Â· Logo Design Anfrage",
+    "inferred_order": 4,
+    "inferred_datetime": "2026-02-18 21:58",
+    "type": "brand / identity doc",
+    "summary": "Paralleler/duplizierter Logo-Chatexport mit ähnlichem Inhalt. Für Spielkanon faktisch nicht relevant, aber als Stil-/Marken-Hintergrund archiviert.",
+    "extracted_claim_count": 3381,
+    "probable_status": "legacy"
+  },
+  {
+    "path": "legacy/🧩 FINALES GESAMTDOKUMENT.docx",
+    "title": "🧩 FINALES GESAMTDOKUMENT",
+    "inferred_order": 5,
+    "inferred_datetime": "2026-02-19 03:09",
+    "type": "system spec / gdd",
+    "summary": "Meta-Kompilation mit Widersprüchen explizit benannt (ein Spiel vs mehrere Linien). Verdichtet Kernideen: unsichtbare Systeme, Zustände statt Zahlen, Timing/Kontext/Weltreaktion. Wichtig als Konfliktkatalog, nicht als reine Wahrheit.",
+    "extracted_claim_count": 49,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎮 AAA GAME DESIGN DOCUMENT.docx",
+    "title": "🎮 AAA GAME DESIGN DOCUMENT",
+    "inferred_order": 6,
+    "inferred_datetime": "2026-02-19 03:10",
+    "type": "system spec / gdd",
+    "summary": "Großes Systemdokument mit Core Vision, Charakterrollen A/B/R, Drama-/Timing-/Emotion-Systemen und prototypischen Events. Mischt Zielzustand und Mid-Stage-Prototyp.",
+    "extracted_claim_count": 26,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎮 VERTICAL SLICE 2.docx",
+    "title": "🎮 VERTICAL SLICE 2",
+    "inferred_order": 7,
+    "inferred_datetime": "2026-02-19 04:36",
+    "type": "mixed notes",
+    "summary": "Vertical-Slice-Spezifikation (3 Locations, Eventflow, Hidden Stats, A/B-Spannung). Liefert konkrete Demo-Grenzen; teils enger als spätere Systemdokus.",
+    "extracted_claim_count": 41,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🔥 ein echtes Porn Game – aber mit Gehirn.docx",
+    "title": "🔥 ein echtes Porn Game – aber mit Gehirn",
+    "inferred_order": 8,
+    "inferred_datetime": "2026-02-19 04:37",
+    "type": "mixed notes",
+    "summary": "Design-Manifest für \"smart porn\": Zugang, Eskalation, Instabilität statt linearer Belohnung. Konzeptionell wichtig, aber terminologisch stark pitchartig.",
+    "extracted_claim_count": 37,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎬 KONKRETE PORN-SZENE (SYSTEMISCH).docx",
+    "title": "🎬 KONKRETE PORN-SZENE (SYSTEMISCH)",
+    "inferred_order": 9,
+    "inferred_datetime": "2026-02-19 04:38",
+    "type": "scene script / event draft",
+    "summary": "Szenenentwurf mit systemischen Triggern/Varianten statt reinem Skriptpfad. Nützlich als Pattern für Zustandsabhängigkeit, nicht als gesicherter Kanonplot.",
+    "extracted_claim_count": 43,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎬 PORN-SZENE (FIGUR A).docx",
+    "title": "🎬 PORN-SZENE (FIGUR A)",
+    "inferred_order": 10,
+    "inferred_datetime": "2026-02-19 04:38",
+    "type": "scene script / event draft",
+    "summary": "Spezifischer Szenenentwurf für Figur A mit emotionaler Kalibrierung. Enthält konkrete Characterisierung, aber hoher Prototyp-/Placeholder-Anteil.",
+    "extracted_claim_count": 38,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎮 EVENT-KETTEN (VERTICAL SLICE).docx",
+    "title": "🎮 EVENT-KETTEN (VERTICAL SLICE)",
+    "inferred_order": 11,
+    "inferred_datetime": "2026-02-19 04:39",
+    "type": "event structure spec",
+    "summary": "Event-Ketten/Abhängigkeiten für Slice (public friction, private beats, escalation hooks). Relevant für Ereignislogik und Prioritäten.",
+    "extracted_claim_count": 45,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/📊 EVENT-TABELLE.docx",
+    "title": "📊 EVENT-TABELLE",
+    "inferred_order": 12,
+    "inferred_datetime": "2026-02-19 04:40",
+    "type": "event structure spec",
+    "summary": "Tabellarische Eventdefinitionen (Trigger, Bedingungen, Konsequenzen, Delays). Hilfreich als strukturierte Referenz für Eventsystem und Zustandsreaktionen.",
+    "extracted_claim_count": 23,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/RENPY-PROJEKTGERÜST.docx",
+    "title": "RENPY-PROJEKTGERÜST",
+    "inferred_order": 13,
+    "inferred_datetime": "2026-02-19 04:41",
+    "type": "implementation scaffold",
+    "summary": "Pragmatischer Code-Skeleton-Plan (Dateiordnung, defaults, Event-Checker). Stark implementierungsnah, passt zur aktuellen Ren'Py-Basis.",
+    "extracted_claim_count": 48,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/Die ersten ~30 Minuten.docx",
+    "title": "Die ersten ~30 Minuten",
+    "inferred_order": 14,
+    "inferred_datetime": "2026-02-19 04:45",
+    "type": "mixed notes",
+    "summary": "Playable-flow-Entwurf der ersten Session. Betonung: ohne Tutorial, Weltreaktion fühlbar, A/B-Drift implizit, begrenzter Zeitrahmen.",
+    "extracted_claim_count": 99,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/Analyse_ Adult-Game_Startplan.docx",
+    "title": "Analyse_ Adult-Game_Startplan",
+    "inferred_order": 15,
+    "inferred_datetime": "2026-02-19 05:09",
+    "type": "production / analysis plan",
+    "summary": "Analyse-/Synthesedokument mit expliziten Systemen (Zeit, Gerücht, Hygiene, Initiative, hidden drift) und offenen Fragen. Gute Brücke zwischen Entwurf und Umsetzung.",
+    "extracted_claim_count": 168,
+    "probable_status": "likely current"
+  },
+  {
+    "path": "legacy/🎬 E_PUBLIC_FRICTION (FINAL).docx",
+    "title": "🎬 E_PUBLIC_FRICTION (FINAL)",
+    "inferred_order": 16,
+    "inferred_datetime": "2026-02-19 05:13",
+    "type": "mixed notes",
+    "summary": "Ausgearbeitete Kernszene inkl. Reaktionsvarianten und delayed consequences. Stützt Prinzip \"keine richtige Wahl, sondern Profilbildung\".",
+    "extracted_claim_count": 32,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎬 PRIVATE AFTERMATH SCENE.docx",
+    "title": "🎬 PRIVATE AFTERMATH SCENE",
+    "inferred_order": 17,
+    "inferred_datetime": "2026-02-19 05:24",
+    "type": "scene script / event draft",
+    "summary": "Aftermath-Szene als Folge öffentlicher Reibung; zeigt Nachwirkung und emotionalen Subtext. Story-spezifisch, aber als Muster für Konsequenzverkettung nützlich.",
+    "extracted_claim_count": 81,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🧠 PROMPT GUIDE.docx",
+    "title": "🧠 PROMPT GUIDE",
+    "inferred_order": 18,
+    "inferred_datetime": "2026-02-19 06:04",
+    "type": "visual/ui pattern spec",
+    "summary": "Asset-Promptbibliothek (Backgrounds/Characters/Varianten). Kein mechanischer Kanon, aber konsistente visuelle Produktionshilfe.",
+    "extracted_claim_count": 62,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🔥 OVERVIEW - 2ND STAGE.docx",
+    "title": "🔥 OVERVIEW - 2ND STAGE",
+    "inferred_order": 19,
+    "inferred_datetime": "2026-02-19 08:13",
+    "type": "mixed notes",
+    "summary": "Stage-2-Struktur (Einstieg, B-Eskalation, R-Intervention, Endings). Zeigt mögliche zweite Phase und Dramaturgieverdichtung.",
+    "extracted_claim_count": 51,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎭 DIALOG-FEINSCHLIFF_.docx",
+    "title": "🎭 DIALOG-FEINSCHLIFF_",
+    "inferred_order": 20,
+    "inferred_datetime": "2026-02-19 08:15",
+    "type": "mixed notes",
+    "summary": "Dialogstil-Regeln und Beispielüberarbeitungen für subtilere, implizite Kommunikation. Unterstützt tonalität \"show, don't explain\".",
+    "extracted_claim_count": 36,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🧠 GLOBAL STYLE PROMPT.docx",
+    "title": "🧠 GLOBAL STYLE PROMPT",
+    "inferred_order": 21,
+    "inferred_datetime": "2026-02-19 08:16",
+    "type": "visual/ui pattern spec",
+    "summary": "Kompakter Masterprompt für visuelle Kohärenz. Produktionshilfe, kein Gameplay-SSOT.",
+    "extracted_claim_count": 13,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎯 PRODUKTIONS-PRIORITÄT (OPTIMIERT).docx",
+    "title": "🎯 PRODUKTIONS-PRIORITÄT (OPTIMIERT)",
+    "inferred_order": 22,
+    "inferred_datetime": "2026-02-19 08:17",
+    "type": "production / analysis plan",
+    "summary": "Priorisierung/Sequenzierung von Build-Phasen (Fundament→Loop→Systemtiefe→Polish). Wichtig für realistische Scope-Steuerung.",
+    "extracted_claim_count": 25,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎨 UI-PHILOSOPHIE.docx",
+    "title": "🎨 UI-PHILOSOPHIE",
+    "inferred_order": 23,
+    "inferred_datetime": "2026-02-19 09:49",
+    "type": "visual/ui pattern spec",
+    "summary": "UI-Grundsatz: minimal, atmosphärisch, keine offensichtlichen Statleisten; Zustand über Ton/Licht/Kontext vermitteln.",
+    "extracted_claim_count": 38,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🧠 VISUELLE DNA DEINES GUI-SKINS.docx",
+    "title": "🧠 VISUELLE DNA DEINES GUI-SKINS",
+    "inferred_order": 24,
+    "inferred_datetime": "2026-02-19 09:50",
+    "type": "visual/ui pattern spec",
+    "summary": "Konkrete GUI-Asset-/Materialbeschreibung (Messing/Glas/Rauch) plus Umsetzungsansätze. Pattern-Library für Look&Feel.",
+    "extracted_claim_count": 27,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🧠 ANIMATIONS-PHILOSOPHIE.docx",
+    "title": "🧠 ANIMATIONS-PHILOSOPHIE",
+    "inferred_order": 25,
+    "inferred_datetime": "2026-02-19 09:53",
+    "type": "visual/ui pattern spec",
+    "summary": "Animation als subtile Atmosphärenebene; \"wenn sichtbar, zu stark\". Enthält konkrete kleine Loop-Ideen statt Action.",
+    "extracted_claim_count": 34,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🎭 EMOTION MAPPING SYSTEM.docx",
+    "title": "🎭 EMOTION MAPPING SYSTEM",
+    "inferred_order": 26,
+    "inferred_datetime": "2026-02-19 09:56",
+    "type": "mixed notes",
+    "summary": "Systematische Zuordnung von innerem Zustand zu Darstellung/Inszenierung. Relevanz für world reaction und Feedback ohne UI-Zahlen.",
+    "extracted_claim_count": 35,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🔧 Dev Task Breakdown.docx",
+    "title": "🔧 Dev Task Breakdown",
+    "inferred_order": 27,
+    "inferred_datetime": "2026-02-19 10:00",
+    "type": "production / analysis plan",
+    "summary": "Taskorientierter Implementierungsplan in Phasen inkl. Systemmilestones. Nützlich für Produktionsabfolge, nicht als Kanoninhalt.",
+    "extracted_claim_count": 20,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/🗓️ DAILY PLAN (14 TAGE REALISTISCH).docx",
+    "title": "🗓️ DAILY PLAN (14 TAGE REALISTISCH)",
+    "inferred_order": 28,
+    "inferred_datetime": "2026-02-19 10:01",
+    "type": "production / analysis plan",
+    "summary": "Zeitplan für 14-Tage-Demo, stark delivery-orientiert. Enthält konkretisierte Reihenfolge, aber mit hohem Planungscharakter.",
+    "extracted_claim_count": 72,
+    "probable_status": "mixed"
+  },
+  {
+    "path": "legacy/Peer_review_beta.docx",
+    "title": "Peer_review_beta",
+    "inferred_order": 29,
+    "inferred_datetime": "2026-02-19 10:31",
+    "type": "mixed notes",
+    "summary": "Leerdatei/ohne verwertbaren Inhalt.",
+    "extracted_claim_count": 0,
+    "probable_status": "unknown"
+  },
+  {
+    "path": "legacy/🧱 VERSION 2 – spielbares Mini-Game mit A_B + Intimacy + Systemkern.docx",
+    "title": "🧱 VERSION 2 – spielbares Mini-Game mit A_B + Intimacy + Systemkern",
+    "inferred_order": 30,
+    "inferred_datetime": "2026-02-19 14:47",
+    "type": "implementation scaffold",
+    "summary": "Konkretes V2-Minigame-Gerüst mit defaults, style-consistency, Zeitsystem und Eventskizzen. Am nächsten an lauffähigem Zwischenstand.",
+    "extracted_claim_count": 68,
+    "probable_status": "likely current"
+  },
+  {
+    "path": "legacy/📘 GAME DESIGN DOCUMENT.docx",
+    "title": "📘 GAME DESIGN DOCUMENT",
+    "inferred_order": 31,
+    "inferred_datetime": "2026-02-20 13:13",
+    "type": "system spec / gdd",
+    "summary": "Spätes GDD mit konsolidierten Systembegriffen und Fokus auf unsichtbare Zustandsdynamik. Wahrscheinlich aktueller als frühe Slice-Spezifikationen.",
+    "extracted_claim_count": 17,
+    "probable_status": "likely current"
+  },
+  {
+    "path": "legacy/Unbenanntes Dokument.docx",
+    "title": "Unbenanntes Dokument",
+    "inferred_order": 32,
+    "inferred_datetime": "2026-02-20 22:25",
+    "type": "mixed notes",
+    "summary": "Kurznotiz/fragmentarisch; enthält keine stabilen Regeln, nur lose Stichpunkte.",
+    "extracted_claim_count": 4,
+    "probable_status": "unknown"
+  }
+]

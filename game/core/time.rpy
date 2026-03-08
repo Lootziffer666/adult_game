@@ -21,6 +21,10 @@ init -10 python:
         for loc in w.rumor_heat:
             w.rumor_heat[loc] *= 0.85
             w.location_mood[loc] *= 0.85
+
+        # Keep a lightweight global rumor aggregate for context-sensitive hooks.
+        if w.rumor_heat:
+            w.rumor_global = sum(w.rumor_heat.values()) / float(len(w.rumor_heat))
     
     def sleep_to_morning():
         w = ws()

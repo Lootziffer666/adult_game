@@ -1,3 +1,5 @@
+default debug_overlay_enabled = False
+
 screen map_screen():
     tag map
     
@@ -24,19 +26,22 @@ screen map_screen():
             
             null height 30
             
-            # Debug Info (optional)
-            frame:
-                background "#000a"
-                padding (10, 10)
-                
-                vbox:
-                    spacing 5
-                    text "DEBUG" size 14 color "#f80"
-                    text "A: Trust [world.chars['A'].trust:.2f] | Att [world.chars['A'].attention:.2f]" size 12
-                    text "B: Attr [world.chars['B'].attraction:.2f] | Att [world.chars['B'].attention:.2f]" size 12
-                    text "Exclusivity: [world.exclusivity_tension:.2f]" size 12
-                    text "Rumor(salon): [world.rumor_heat['salon']:.2f]" size 12
-                    text "Fatigue: [world.fatigue] | Clean: [world.cleanliness]" size 12
+            textbutton "Dev Debug: ['ON' if debug_overlay_enabled else 'OFF']" action ToggleVariable("debug_overlay_enabled") xsize 200
+
+            if debug_overlay_enabled:
+                frame:
+                    background "#000a"
+                    padding (10, 10)
+
+                    vbox:
+                        spacing 5
+                        text "DEBUG" size 14 color "#f80"
+                        text "A: Trust [world.chars['A'].trust:.2f] | Att [world.chars['A'].attention:.2f]" size 12
+                        text "B: Attr [world.chars['B'].attraction:.2f] | Att [world.chars['B'].attention:.2f]" size 12
+                        text "Exclusivity: [world.exclusivity_tension:.2f]" size 12
+                        text "Rumor(salon): [world.rumor_heat['salon']:.2f] | Global: [world.rumor_global:.2f]" size 12
+                        text "Fatigue: [world.fatigue] | Clean: [world.cleanliness]" size 12
+                        text "Context: [', '.join(sorted(list(world.context_tags)))]" size 12
 
 label map_screen:
     call screen map_screen

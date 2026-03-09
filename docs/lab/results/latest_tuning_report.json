@@ -1,0 +1,338 @@
+{
+  "tuning_metadata": {
+    "timestamp": "2026-03-09T01:46:02",
+    "seed": 11,
+    "generations": 4,
+    "population_size": 6,
+    "beam_width": 3,
+    "scenario_repeats": 2
+  },
+  "verdict": {
+    "overall": "improved",
+    "confidence": "high",
+    "scope_growth": "partly, add 2-3 more micro-scenarios"
+  },
+  "baseline": {
+    "score": 20.103,
+    "candidate_parameters": {
+      "hint_weight": 1.0,
+      "context_weight": 1.0,
+      "timing_weight": 1.0,
+      "hidden_state_weight": 1.0,
+      "delayed_threshold": 0.55,
+      "no_op_penalty": 1.0,
+      "repeated_state_penalty": 1.0,
+      "differentiation_weight": 1.0,
+      "readability_weight": 1.0,
+      "object_evidence_weight": 1.0
+    },
+    "metrics": {
+      "total_iterations": 20,
+      "total_steps": 60,
+      "unique_reactions_triggered": 7,
+      "unique_reaction_ids": [
+        "Reaction_Context_Aligned",
+        "Reaction_Delayed_Shift",
+        "Reaction_Evidence_Helps",
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_New_Observation",
+        "Reaction_No_Open",
+        "Reaction_Risk_Pushback"
+      ],
+      "reactions_never_triggered": [
+        "Reaction_Less_Private",
+        "Reaction_Warmer_Guarded"
+      ],
+      "branch_differentiation_count": 7,
+      "empty_noop_reaction_frequency": 0.133,
+      "delayed_reaction_frequency": 0.067,
+      "immediate_reaction_count": 56,
+      "delayed_reaction_count": 4,
+      "hint_usefulness_score": 0.6,
+      "action_context_sensitivity": 17,
+      "repeated_state_collapse_count": 0,
+      "contexts_actions_with_no_meaningful_difference": [
+        "Space_A_Evening::Action_Ask",
+        "Space_A_Evening::Action_Observe",
+        "Space_A_Evening::Action_Present_Evidence",
+        "Space_A_Evening::Action_Return_Later",
+        "Space_A_Morning::Action_Observe",
+        "Space_A_Morning::Action_Present_Evidence",
+        "Space_A_Morning::Action_Return_Later",
+        "Space_B_Evening::Action_Observe",
+        "Space_B_Evening::Action_Test_Boundary",
+        "Space_B_Night::Action_Ask",
+        "Space_B_Night::Action_Observe",
+        "Space_B_Night::Action_Present_Evidence",
+        "Space_B_Night::Action_Return_Later"
+      ],
+      "same_reaction_dominance": 0.333,
+      "dead_path_ratio": 0.867,
+      "readability_score": 0.649,
+      "loop_stagnation_warnings": []
+    }
+  },
+  "best_candidate": {
+    "score": 22.6972,
+    "candidate_parameters": {
+      "hint_weight": 0.9841,
+      "context_weight": 0.9794,
+      "timing_weight": 0.9654,
+      "hidden_state_weight": 0.8912,
+      "delayed_threshold": 0.6335,
+      "no_op_penalty": 0.9891,
+      "repeated_state_penalty": 0.9685,
+      "differentiation_weight": 1.1551,
+      "readability_weight": 0.969,
+      "object_evidence_weight": 0.998
+    },
+    "metrics": {
+      "total_iterations": 20,
+      "total_steps": 60,
+      "unique_reactions_triggered": 8,
+      "unique_reaction_ids": [
+        "Reaction_Context_Aligned",
+        "Reaction_Delayed_Shift",
+        "Reaction_Evidence_Helps",
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_New_Observation",
+        "Reaction_No_Open",
+        "Reaction_Risk_Pushback",
+        "Reaction_Warmer_Guarded"
+      ],
+      "reactions_never_triggered": [
+        "Reaction_Less_Private"
+      ],
+      "branch_differentiation_count": 8,
+      "empty_noop_reaction_frequency": 0.133,
+      "delayed_reaction_frequency": 0.0,
+      "immediate_reaction_count": 60,
+      "delayed_reaction_count": 0,
+      "hint_usefulness_score": 0.6,
+      "action_context_sensitivity": 18,
+      "repeated_state_collapse_count": 0,
+      "contexts_actions_with_no_meaningful_difference": [
+        "Space_A_Evening::Action_Observe",
+        "Space_A_Evening::Action_Present_Evidence",
+        "Space_A_Evening::Action_Return_Later",
+        "Space_A_Morning::Action_Observe",
+        "Space_A_Morning::Action_Present_Evidence",
+        "Space_A_Morning::Action_Return_Later",
+        "Space_B_Evening::Action_Observe",
+        "Space_B_Evening::Action_Test_Boundary",
+        "Space_B_Night::Action_Ask",
+        "Space_B_Night::Action_Observe",
+        "Space_B_Night::Action_Present_Evidence",
+        "Space_B_Night::Action_Return_Later"
+      ],
+      "same_reaction_dominance": 0.3,
+      "dead_path_ratio": 0.8,
+      "readability_score": 0.688,
+      "loop_stagnation_warnings": []
+    }
+  },
+  "score_delta": 2.5942,
+  "generation_history": [
+    {
+      "generation": 1,
+      "best_score": 20.103,
+      "median_score": 20.103,
+      "worst_score": 20.103,
+      "best_metrics": {
+        "total_iterations": 20,
+        "total_steps": 60,
+        "unique_reactions_triggered": 7,
+        "unique_reaction_ids": [
+          "Reaction_Context_Aligned",
+          "Reaction_Delayed_Shift",
+          "Reaction_Evidence_Helps",
+          "Reaction_Fragment_Relevant_NotEnough",
+          "Reaction_New_Observation",
+          "Reaction_No_Open",
+          "Reaction_Risk_Pushback"
+        ],
+        "reactions_never_triggered": [
+          "Reaction_Less_Private",
+          "Reaction_Warmer_Guarded"
+        ],
+        "branch_differentiation_count": 7,
+        "empty_noop_reaction_frequency": 0.133,
+        "delayed_reaction_frequency": 0.067,
+        "immediate_reaction_count": 56,
+        "delayed_reaction_count": 4,
+        "hint_usefulness_score": 0.6,
+        "action_context_sensitivity": 17,
+        "repeated_state_collapse_count": 0,
+        "contexts_actions_with_no_meaningful_difference": [
+          "Space_A_Evening::Action_Ask",
+          "Space_A_Evening::Action_Observe",
+          "Space_A_Evening::Action_Present_Evidence",
+          "Space_A_Evening::Action_Return_Later",
+          "Space_A_Morning::Action_Observe",
+          "Space_A_Morning::Action_Present_Evidence",
+          "Space_A_Morning::Action_Return_Later",
+          "Space_B_Evening::Action_Observe",
+          "Space_B_Evening::Action_Test_Boundary",
+          "Space_B_Night::Action_Ask",
+          "Space_B_Night::Action_Observe",
+          "Space_B_Night::Action_Present_Evidence",
+          "Space_B_Night::Action_Return_Later"
+        ],
+        "same_reaction_dominance": 0.333,
+        "dead_path_ratio": 0.867,
+        "readability_score": 0.649,
+        "loop_stagnation_warnings": []
+      }
+    },
+    {
+      "generation": 2,
+      "best_score": 22.6972,
+      "median_score": 20.103,
+      "worst_score": 20.103,
+      "best_metrics": {
+        "total_iterations": 20,
+        "total_steps": 60,
+        "unique_reactions_triggered": 8,
+        "unique_reaction_ids": [
+          "Reaction_Context_Aligned",
+          "Reaction_Delayed_Shift",
+          "Reaction_Evidence_Helps",
+          "Reaction_Fragment_Relevant_NotEnough",
+          "Reaction_New_Observation",
+          "Reaction_No_Open",
+          "Reaction_Risk_Pushback",
+          "Reaction_Warmer_Guarded"
+        ],
+        "reactions_never_triggered": [
+          "Reaction_Less_Private"
+        ],
+        "branch_differentiation_count": 8,
+        "empty_noop_reaction_frequency": 0.133,
+        "delayed_reaction_frequency": 0.0,
+        "immediate_reaction_count": 60,
+        "delayed_reaction_count": 0,
+        "hint_usefulness_score": 0.6,
+        "action_context_sensitivity": 18,
+        "repeated_state_collapse_count": 0,
+        "contexts_actions_with_no_meaningful_difference": [
+          "Space_A_Evening::Action_Observe",
+          "Space_A_Evening::Action_Present_Evidence",
+          "Space_A_Evening::Action_Return_Later",
+          "Space_A_Morning::Action_Observe",
+          "Space_A_Morning::Action_Present_Evidence",
+          "Space_A_Morning::Action_Return_Later",
+          "Space_B_Evening::Action_Observe",
+          "Space_B_Evening::Action_Test_Boundary",
+          "Space_B_Night::Action_Ask",
+          "Space_B_Night::Action_Observe",
+          "Space_B_Night::Action_Present_Evidence",
+          "Space_B_Night::Action_Return_Later"
+        ],
+        "same_reaction_dominance": 0.3,
+        "dead_path_ratio": 0.8,
+        "readability_score": 0.688,
+        "loop_stagnation_warnings": []
+      }
+    },
+    {
+      "generation": 3,
+      "best_score": 22.6972,
+      "median_score": 20.103,
+      "worst_score": 20.103,
+      "best_metrics": {
+        "total_iterations": 20,
+        "total_steps": 60,
+        "unique_reactions_triggered": 8,
+        "unique_reaction_ids": [
+          "Reaction_Context_Aligned",
+          "Reaction_Delayed_Shift",
+          "Reaction_Evidence_Helps",
+          "Reaction_Fragment_Relevant_NotEnough",
+          "Reaction_New_Observation",
+          "Reaction_No_Open",
+          "Reaction_Risk_Pushback",
+          "Reaction_Warmer_Guarded"
+        ],
+        "reactions_never_triggered": [
+          "Reaction_Less_Private"
+        ],
+        "branch_differentiation_count": 8,
+        "empty_noop_reaction_frequency": 0.133,
+        "delayed_reaction_frequency": 0.0,
+        "immediate_reaction_count": 60,
+        "delayed_reaction_count": 0,
+        "hint_usefulness_score": 0.6,
+        "action_context_sensitivity": 18,
+        "repeated_state_collapse_count": 0,
+        "contexts_actions_with_no_meaningful_difference": [
+          "Space_A_Evening::Action_Observe",
+          "Space_A_Evening::Action_Present_Evidence",
+          "Space_A_Evening::Action_Return_Later",
+          "Space_A_Morning::Action_Observe",
+          "Space_A_Morning::Action_Present_Evidence",
+          "Space_A_Morning::Action_Return_Later",
+          "Space_B_Evening::Action_Observe",
+          "Space_B_Evening::Action_Test_Boundary",
+          "Space_B_Night::Action_Ask",
+          "Space_B_Night::Action_Observe",
+          "Space_B_Night::Action_Present_Evidence",
+          "Space_B_Night::Action_Return_Later"
+        ],
+        "same_reaction_dominance": 0.3,
+        "dead_path_ratio": 0.8,
+        "readability_score": 0.688,
+        "loop_stagnation_warnings": []
+      }
+    },
+    {
+      "generation": 4,
+      "best_score": 22.6972,
+      "median_score": 20.103,
+      "worst_score": 20.103,
+      "best_metrics": {
+        "total_iterations": 20,
+        "total_steps": 60,
+        "unique_reactions_triggered": 8,
+        "unique_reaction_ids": [
+          "Reaction_Context_Aligned",
+          "Reaction_Delayed_Shift",
+          "Reaction_Evidence_Helps",
+          "Reaction_Fragment_Relevant_NotEnough",
+          "Reaction_New_Observation",
+          "Reaction_No_Open",
+          "Reaction_Risk_Pushback",
+          "Reaction_Warmer_Guarded"
+        ],
+        "reactions_never_triggered": [
+          "Reaction_Less_Private"
+        ],
+        "branch_differentiation_count": 8,
+        "empty_noop_reaction_frequency": 0.133,
+        "delayed_reaction_frequency": 0.0,
+        "immediate_reaction_count": 60,
+        "delayed_reaction_count": 0,
+        "hint_usefulness_score": 0.6,
+        "action_context_sensitivity": 18,
+        "repeated_state_collapse_count": 0,
+        "contexts_actions_with_no_meaningful_difference": [
+          "Space_A_Evening::Action_Observe",
+          "Space_A_Evening::Action_Present_Evidence",
+          "Space_A_Evening::Action_Return_Later",
+          "Space_A_Morning::Action_Observe",
+          "Space_A_Morning::Action_Present_Evidence",
+          "Space_A_Morning::Action_Return_Later",
+          "Space_B_Evening::Action_Observe",
+          "Space_B_Evening::Action_Test_Boundary",
+          "Space_B_Night::Action_Ask",
+          "Space_B_Night::Action_Observe",
+          "Space_B_Night::Action_Present_Evidence",
+          "Space_B_Night::Action_Return_Later"
+        ],
+        "same_reaction_dominance": 0.3,
+        "dead_path_ratio": 0.8,
+        "readability_score": 0.688,
+        "loop_stagnation_warnings": []
+      }
+    }
+  ]
+}

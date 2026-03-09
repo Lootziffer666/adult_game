@@ -11,6 +11,7 @@ label ev_public_friction:
                 $ world.public_standing += 0.2
                 $ world.chars["A"].trust += 0.4
                 $ world.rumor_heat["salon"] = max(0.0, world.rumor_heat["salon"] - 0.1)
+                $ set_reaction_placeholder("The reaction is warmer, but still guarded.", source="ev_public_friction")
                 
                 "„Funktion schlägt Spott.""
                 "Figur A blickt kurz auf."
@@ -20,6 +21,8 @@ label ev_public_friction:
                 $ world.dominance_image += 0.4
                 $ world.rumor_heat["salon"] += 0.3
                 $ world.chars["B"].attraction += 0.3
+                $ queue_delayed_effect("ev_aftershock_rumor", where=["bridge", "home"])
+                $ set_reaction_placeholder("This action changes availability later, not immediately.", source="ev_public_friction")
                 
                 "„Du redest viel für jemanden ohne Substanz.""
                 "Der Raum wird still."
@@ -28,6 +31,7 @@ label ev_public_friction:
             "Ignorieren":
                 $ world.chars["A"].trust -= 0.3
                 $ world.rumor_heat["salon"] += 0.2
+                $ set_reaction_placeholder("The room feels less cooperative after silence.", source="ev_public_friction")
                 
                 "Du sagst nichts."
                 "Figur A justiert das Uhrwerk neu."
@@ -44,6 +48,7 @@ label ev_private_A:
             "Ehrlich stärken":
                 $ world.chars["A"].trust += 0.5
                 $ world.chars["A"].attention += 0.3
+                $ set_reaction_placeholder("The character stays longer than before.", source="ev_private_A")
                 
                 "„Du brauchst niemanden zu überzeugen.""
                 "Sie hört auf, Dinge neu auszurichten."
@@ -52,6 +57,7 @@ label ev_private_A:
             "Flapsig relativieren":
                 $ world.chars["A"].trust -= 0.3
                 $ world.chars["A"].attention -= 0.1
+                $ set_reaction_placeholder("The topic closes for now.", source="ev_private_A")
                 
                 "„Mach dir nicht so viele Gedanken.""
                 "Sie richtet zwei Werkzeuge exakt parallel."
@@ -72,6 +78,7 @@ label ev_bridge_B:
                 $ world.chars["B"].attention += 0.2
                 $ world.dominance_image += 0.2
                 $ world.rumor_heat["bridge"] += 0.1
+                $ set_reaction_placeholder("The interaction becomes risk-forward.", source="ev_bridge_B")
                 
                 "„Dann lass uns sehen, was brennt.""
                 "Sie kommt näher."
@@ -79,8 +86,17 @@ label ev_bridge_B:
             
             "Zurückhaltend bleiben":
                 $ world.chars["B"].attraction -= 0.1
+                $ set_reaction_placeholder("The interaction remains cautious.", source="ev_bridge_B")
                 
                 "„Nicht alles muss explodieren.""
                 "Sie lächelt, aber bleibt auf Abstand."
     
+    return
+
+
+label ev_aftershock_rumor:
+    "Später fällt dir auf, wie schnell sich Blicke herumsprechen."
+    $ world.public_standing = max(-2.0, world.public_standing - 0.1)
+    $ world.memory_log.append("Aftershock: public tension echoed beyond the original scene.")
+    $ set_reaction_placeholder("A delayed reaction is now visible in another context.", source="ev_aftershock_rumor")
     return

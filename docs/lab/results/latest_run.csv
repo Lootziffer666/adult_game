@@ -1,0 +1,121 @@
+iteration_id,step_index,context_id,space,time,action,selected_reaction,immediate_or_delayed,known_fragments,trust,curiosity,tension,notes
+1,1,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1;Fragment_2,0.2,0.4,0.6,Timing and context align; response quality improves.
+1,2,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1;Fragment_2,0.26,0.4,0.6,Timing and context align; response quality improves.
+1,3,Space_A_Morning,Space_A,Morning,Action_Observe,Reaction_New_Observation,immediate,Fragment_1;Fragment_2,0.32,0.4,0.6,A new observation is recorded.
+1,4,Space_A_Morning,Space_A,Morning,Action_Observe,Reaction_New_Observation,immediate,Fragment_1;Fragment_2,0.32,0.58,0.6,A new observation is recorded.
+2,1,Space_B_Night,Space_B,Night,Action_Observe,Reaction_New_Observation,immediate,,0.2,0.4,0.6,A new observation is recorded.
+2,2,Space_B_Night,Space_B,Night,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1,0.2,0.58,0.6,Timing and context align; response quality improves.
+2,3,Space_B_Night,Space_B,Night,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1,0.26,0.58,0.6,Timing and context align; response quality improves.
+2,4,Space_B_Night,Space_B,Night,Action_Observe,Reaction_New_Observation,immediate,Fragment_1,0.32,0.58,0.6,A new observation is recorded.
+3,1,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Warmer_Guarded,immediate,Fragment_2;Topic_1,0.7,0.6,0.3,The reaction is warmer but still guarded.
+3,2,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2;Topic_1,0.7999999999999999,0.6,0.25,The response hardens after boundary pressure.
+3,3,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_2;Topic_1,0.72,0.6,0.35,This action changes later availability.
+3,4,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_Context_Aligned,delayed,Fragment_2;Topic_1,0.72,0.6,0.35,Timing and context align; response quality improves.
+4,1,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_2,0.7,0.6,0.3,This action changes later availability.
+4,2,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Context_Aligned,delayed,Fragment_2,0.7,0.6,0.3,Timing and context align; response quality improves.
+4,3,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Warmer_Guarded,immediate,Fragment_2,0.76,0.6,0.3,The reaction is warmer but still guarded.
+4,4,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_2,0.86,0.6,0.25,This action changes later availability.
+5,1,Space_A_Morning,Space_A,Morning,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.2,0.4,0.6,This action changes later availability.
+5,2,Space_A_Morning,Space_A,Morning,Action_Return_Later,Reaction_Context_Aligned,delayed,Fragment_1,0.2,0.4,0.6,Timing and context align; response quality improves.
+5,3,Space_A_Morning,Space_A,Morning,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.26,0.4,0.6,This action changes later availability.
+5,4,Space_A_Morning,Space_A,Morning,Action_Observe,Reaction_Context_Aligned,delayed,Fragment_1,0.26,0.4,0.6,Timing and context align; response quality improves.
+6,1,Space_B_Night,Space_B,Night,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,,0.7,0.6,0.3,The response hardens after boundary pressure.
+6,2,Space_B_Night,Space_B,Night,Action_Observe,Reaction_New_Observation,immediate,,0.62,0.6,0.4,A new observation is recorded.
+6,3,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.62,0.7799999999999999,0.4,This action changes later availability.
+6,4,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Context_Aligned,delayed,Fragment_1,0.62,0.7799999999999999,0.4,Timing and context align; response quality improves.
+7,1,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,,0.7,0.6,0.3,A new observation is recorded.
+7,2,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1,0.7,0.7799999999999999,0.3,Timing and context align; response quality improves.
+7,3,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.76,0.7799999999999999,0.3,This action changes later availability.
+7,4,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_Context_Aligned,delayed,Fragment_1,0.76,0.7799999999999999,0.3,Timing and context align; response quality improves.
+8,1,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2,0.2,0.4,0.6,The response hardens after boundary pressure.
+8,2,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_2,0.12000000000000001,0.4,0.7,This action changes later availability.
+8,3,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Context_Aligned,delayed,Fragment_2,0.12000000000000001,0.4,0.7,Timing and context align; response quality improves.
+8,4,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_2,0.18,0.4,0.7,This action changes later availability.
+9,1,Space_B_Evening,Space_B,Evening,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1;Fragment_2,0.2,0.4,0.6,Timing and context align; response quality improves.
+9,2,Space_B_Evening,Space_B,Evening,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1;Fragment_2,0.26,0.4,0.6,Timing and context align; response quality improves.
+9,3,Space_B_Evening,Space_B,Evening,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1;Fragment_2,0.32,0.4,0.6,Timing and context align; response quality improves.
+9,4,Space_B_Evening,Space_B,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_1;Fragment_2,0.38,0.4,0.6,The response hardens after boundary pressure.
+10,1,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1;Topic_1,0.5,0.5,0.5,This action changes later availability.
+10,2,Space_B_Night,Space_B,Night,Action_Observe,Reaction_Context_Aligned,delayed,Fragment_1;Topic_1,0.5,0.5,0.5,Timing and context align; response quality improves.
+10,3,Space_B_Night,Space_B,Night,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1;Topic_1,0.56,0.6,0.5,Timing and context align; response quality improves.
+10,4,Space_B_Night,Space_B,Night,Action_Observe,Reaction_New_Observation,immediate,Fragment_1;Topic_1,0.6200000000000001,0.6,0.5,A new observation is recorded.
+11,1,Space_B_Evening,Space_B,Evening,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1,0.5,0.5,0.5,Timing and context align; response quality improves.
+11,2,Space_B_Evening,Space_B,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.56,0.5,0.5,This action changes later availability.
+11,3,Space_B_Evening,Space_B,Evening,Action_Ask,Reaction_Context_Aligned,delayed,Fragment_1,0.56,0.5,0.5,Timing and context align; response quality improves.
+11,4,Space_B_Evening,Space_B,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_1,0.6200000000000001,0.5,0.5,The response hardens after boundary pressure.
+12,1,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.7,0.6,0.3,This action changes later availability.
+12,2,Space_B_Night,Space_B,Night,Action_Ask,Reaction_Context_Aligned,delayed,Fragment_1,0.7,0.6,0.3,Timing and context align; response quality improves.
+12,3,Space_B_Night,Space_B,Night,Action_Ask,Reaction_Warmer_Guarded,immediate,Fragment_1,0.76,0.6,0.3,The reaction is warmer but still guarded.
+12,4,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.86,0.6,0.25,This action changes later availability.
+13,1,Space_B_Night,Space_B,Night,Action_Ask,Reaction_Warmer_Guarded,immediate,Fragment_2,0.7,0.6,0.3,The reaction is warmer but still guarded.
+13,2,Space_B_Night,Space_B,Night,Action_Ask,Reaction_Warmer_Guarded,immediate,Fragment_2,0.7999999999999999,0.6,0.25,The reaction is warmer but still guarded.
+13,3,Space_B_Night,Space_B,Night,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2,0.8999999999999999,0.6,0.2,The response hardens after boundary pressure.
+13,4,Space_B_Night,Space_B,Night,Action_Observe,Reaction_New_Observation,immediate,Fragment_2,0.82,0.6,0.30000000000000004,A new observation is recorded.
+14,1,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_No_Open,immediate,,0.2,0.4,0.6,Nothing opens at this time.
+14,2,Space_A_Morning,Space_A,Morning,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,,0.2,0.38,0.6,The response hardens after boundary pressure.
+14,3,Space_A_Morning,Space_A,Morning,Action_Observe,Reaction_New_Observation,immediate,,0.12000000000000001,0.38,0.7,A new observation is recorded.
+14,4,Space_A_Morning,Space_A,Morning,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_1,0.12000000000000001,0.5599999999999999,0.7,The response hardens after boundary pressure.
+15,1,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Topic_1,0.7,0.6,0.3,This action changes later availability.
+15,2,Space_B_Night,Space_B,Night,Action_Observe,Reaction_Context_Aligned,delayed,Topic_1,0.7,0.6,0.3,Timing and context align; response quality improves.
+15,3,Space_B_Night,Space_B,Night,Action_Observe,Reaction_New_Observation,immediate,Topic_1,0.76,0.7,0.3,A new observation is recorded.
+15,4,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1;Topic_1,0.76,0.8799999999999999,0.3,This action changes later availability.
+16,1,Space_B_Evening,Space_B,Evening,Action_Ask,Reaction_Fragment_Relevant_NotEnough,immediate,Fragment_2,0.2,0.4,0.6,"The fragment matters here, but not yet enough."
+16,2,Space_B_Evening,Space_B,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2,0.2,0.4,0.6,The response hardens after boundary pressure.
+16,3,Space_B_Evening,Space_B,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_2,0.12000000000000001,0.4,0.7,A new observation is recorded.
+16,4,Space_B_Evening,Space_B,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1;Fragment_2,0.12000000000000001,0.58,0.7,This action changes later availability.
+17,1,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,,0.7,0.6,0.3,This action changes later availability.
+17,2,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Context_Aligned,delayed,,0.7,0.6,0.3,Timing and context align; response quality improves.
+17,3,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Warmer_Guarded,immediate,,0.76,0.6,0.3,The reaction is warmer but still guarded.
+17,4,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,,0.86,0.6,0.25,This action changes later availability.
+18,1,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_1;Fragment_2,0.7,0.6,0.3,The response hardens after boundary pressure.
+18,2,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_1;Fragment_2,0.62,0.6,0.4,A new observation is recorded.
+18,3,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_1;Fragment_2,0.62,0.7799999999999999,0.4,A new observation is recorded.
+18,4,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1;Fragment_2,0.62,0.9599999999999999,0.4,This action changes later availability.
+19,1,Space_B_Evening,Space_B,Evening,Action_Ask,Reaction_Fragment_Relevant_NotEnough,immediate,,0.2,0.4,0.6,"The fragment matters here, but not yet enough."
+19,2,Space_B_Evening,Space_B,Evening,Action_Observe,Reaction_New_Observation,immediate,,0.2,0.4,0.6,A new observation is recorded.
+19,3,Space_B_Evening,Space_B,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_1,0.2,0.58,0.6,A new observation is recorded.
+19,4,Space_B_Evening,Space_B,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_1,0.2,0.7599999999999999,0.6,The response hardens after boundary pressure.
+20,1,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_No_Open,immediate,,0.7,0.6,0.3,Nothing opens at this time.
+20,2,Space_A_Morning,Space_A,Morning,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,,0.7,0.58,0.3,The response hardens after boundary pressure.
+20,3,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_No_Open,immediate,,0.62,0.58,0.4,Nothing opens at this time.
+20,4,Space_A_Morning,Space_A,Morning,Action_Return_Later,Reaction_Delayed_Shift,immediate,,0.62,0.5599999999999999,0.4,This action changes later availability.
+21,1,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1;Topic_1,0.2,0.4,0.6,This action changes later availability.
+21,2,Space_B_Night,Space_B,Night,Action_Test_Boundary,Reaction_Context_Aligned,delayed,Fragment_1;Topic_1,0.2,0.4,0.6,Timing and context align; response quality improves.
+21,3,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1;Topic_1,0.26,0.4,0.6,This action changes later availability.
+21,4,Space_B_Night,Space_B,Night,Action_Test_Boundary,Reaction_Context_Aligned,delayed,Fragment_1;Topic_1,0.26,0.4,0.6,Timing and context align; response quality improves.
+22,1,Space_B_Night,Space_B,Night,Action_Ask,Reaction_Fragment_Relevant_NotEnough,immediate,,0.2,0.4,0.6,"The fragment matters here, but not yet enough."
+22,2,Space_B_Night,Space_B,Night,Action_Observe,Reaction_New_Observation,immediate,,0.2,0.4,0.6,A new observation is recorded.
+22,3,Space_B_Night,Space_B,Night,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.2,0.58,0.6,This action changes later availability.
+22,4,Space_B_Night,Space_B,Night,Action_Observe,Reaction_Context_Aligned,delayed,Fragment_1,0.2,0.58,0.6,Timing and context align; response quality improves.
+23,1,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,,0.7,0.6,0.3,A new observation is recorded.
+23,2,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_1,0.7,0.7799999999999999,0.3,A new observation is recorded.
+23,3,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_1,0.7,0.9599999999999999,0.3,A new observation is recorded.
+23,4,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1,0.7,1.0,0.3,Timing and context align; response quality improves.
+24,1,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1,0.2,0.4,0.6,Timing and context align; response quality improves.
+24,2,Space_A_Morning,Space_A,Morning,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.26,0.4,0.6,This action changes later availability.
+24,3,Space_A_Morning,Space_A,Morning,Action_Test_Boundary,Reaction_Context_Aligned,delayed,Fragment_1,0.26,0.4,0.6,Timing and context align; response quality improves.
+24,4,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1,0.32,0.4,0.6,Timing and context align; response quality improves.
+25,1,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Warmer_Guarded,immediate,Fragment_2;Topic_1,0.7,0.6,0.3,The reaction is warmer but still guarded.
+25,2,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2;Topic_1,0.7999999999999999,0.6,0.25,The response hardens after boundary pressure.
+25,3,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2;Topic_1,0.72,0.6,0.35,The response hardens after boundary pressure.
+25,4,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Warmer_Guarded,immediate,Fragment_2;Topic_1,0.64,0.6,0.44999999999999996,The reaction is warmer but still guarded.
+26,1,Space_A_Morning,Space_A,Morning,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2;Topic_1,0.2,0.4,0.6,The response hardens after boundary pressure.
+26,2,Space_A_Morning,Space_A,Morning,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2;Topic_1,0.12000000000000001,0.4,0.7,The response hardens after boundary pressure.
+26,3,Space_A_Morning,Space_A,Morning,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2;Topic_1,0.04000000000000001,0.4,0.7999999999999999,The response hardens after boundary pressure.
+26,4,Space_A_Morning,Space_A,Morning,Action_Observe,Reaction_New_Observation,immediate,Fragment_2;Topic_1,0.0,0.4,0.8999999999999999,A new observation is recorded.
+27,1,Space_A_Morning,Space_A,Morning,Action_Return_Later,Reaction_Delayed_Shift,immediate,Topic_1,0.2,0.4,0.6,This action changes later availability.
+27,2,Space_A_Morning,Space_A,Morning,Action_Observe,Reaction_Context_Aligned,delayed,Topic_1,0.2,0.4,0.6,Timing and context align; response quality improves.
+27,3,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_No_Open,immediate,Topic_1,0.26,0.5,0.6,Nothing opens at this time.
+27,4,Space_A_Morning,Space_A,Morning,Action_Ask,Reaction_No_Open,immediate,Topic_1,0.26,0.48,0.6,Nothing opens at this time.
+28,1,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_1,0.7,0.6,0.3,The response hardens after boundary pressure.
+28,2,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Context_Aligned,immediate,Fragment_1,0.62,0.6,0.4,Timing and context align; response quality improves.
+28,3,Space_A_Evening,Space_A,Evening,Action_Return_Later,Reaction_Delayed_Shift,immediate,Fragment_1,0.6799999999999999,0.6,0.4,This action changes later availability.
+28,4,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Context_Aligned,delayed,Fragment_1,0.6799999999999999,0.6,0.4,Timing and context align; response quality improves.
+29,1,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Topic_1,0.2,0.4,0.6,A new observation is recorded.
+29,2,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_1;Topic_1,0.2,0.58,0.6,A new observation is recorded.
+29,3,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_1;Topic_1,0.2,0.7599999999999999,0.6,A new observation is recorded.
+29,4,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_1;Topic_1,0.2,0.9399999999999998,0.6,A new observation is recorded.
+30,1,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2,0.2,0.4,0.6,The response hardens after boundary pressure.
+30,2,Space_A_Evening,Space_A,Evening,Action_Ask,Reaction_Fragment_Relevant_NotEnough,immediate,Fragment_2,0.12000000000000001,0.4,0.7,"The fragment matters here, but not yet enough."
+30,3,Space_A_Evening,Space_A,Evening,Action_Test_Boundary,Reaction_Risk_Pushback,immediate,Fragment_2,0.12000000000000001,0.4,0.7,The response hardens after boundary pressure.
+30,4,Space_A_Evening,Space_A,Evening,Action_Observe,Reaction_New_Observation,immediate,Fragment_2,0.04000000000000001,0.4,0.7999999999999999,A new observation is recorded.

@@ -1,0 +1,34 @@
+{
+  "run_name": "baseline_lab",
+  "seed": 42,
+  "iterations": 30,
+  "max_steps_per_iteration": 4,
+  "variation_mode": "bounded",
+  "delayed_reactions_enabled": true,
+  "placeholder_text_enabled": true,
+  "archive_results": true,
+  "contexts": [
+    {"id": "Space_A_Morning", "space": "Space_A", "time": "Morning", "privacy": 0.3},
+    {"id": "Space_A_Evening", "space": "Space_A", "time": "Evening", "privacy": 0.6},
+    {"id": "Space_B_Evening", "space": "Space_B", "time": "Evening", "privacy": 0.4},
+    {"id": "Space_B_Night", "space": "Space_B", "time": "Night", "privacy": 0.8}
+  ],
+  "fragments": ["Fragment_1", "Fragment_2", "Topic_1"],
+  "actions": ["Action_Observe", "Action_Ask", "Action_Return_Later", "Action_Test_Boundary"],
+  "state_presets": [
+    {"id": "Preset_Guarded", "trust": 0.2, "curiosity": 0.4, "tension": 0.6},
+    {"id": "Preset_Balanced", "trust": 0.5, "curiosity": 0.5, "tension": 0.5},
+    {"id": "Preset_Open", "trust": 0.7, "curiosity": 0.6, "tension": 0.3}
+  ],
+  "comparison_metrics": [
+    "unique_reactions_triggered",
+    "reactions_never_triggered",
+    "branch_differentiation_count",
+    "empty_reaction_frequency",
+    "delayed_reaction_frequency",
+    "hint_usefulness_score",
+    "action_context_sensitivity",
+    "repeated_state_collapse_count",
+    "loop_stagnation_warnings"
+  ]
+}

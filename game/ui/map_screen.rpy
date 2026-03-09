@@ -44,6 +44,7 @@ screen map_screen():
                         text "Rumor(salon): [world.rumor_heat['salon']:.2f] | Global: [world.rumor_global:.2f]" size 12
                         text "Fatigue: [world.fatigue] | Clean: [world.cleanliness]" size 12
                         text "Context: [', '.join(sorted(list(world.context_tags)))]" size 12
+                        text "Trace tail: [world.validation_trace[-1] if world.validation_trace else '(none)']" size 12
 
 label map_screen:
     call screen map_screen

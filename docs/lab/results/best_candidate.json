@@ -1,0 +1,2193 @@
+{
+  "score": 22.6972,
+  "candidate_parameters": {
+    "hint_weight": 0.9841,
+    "context_weight": 0.9794,
+    "timing_weight": 0.9654,
+    "hidden_state_weight": 0.8912,
+    "delayed_threshold": 0.6335,
+    "no_op_penalty": 0.9891,
+    "repeated_state_penalty": 0.9685,
+    "differentiation_weight": 1.1551,
+    "readability_weight": 0.969,
+    "object_evidence_weight": 0.998
+  },
+  "metrics": {
+    "total_iterations": 20,
+    "total_steps": 60,
+    "unique_reactions_triggered": 8,
+    "unique_reaction_ids": [
+      "Reaction_Context_Aligned",
+      "Reaction_Delayed_Shift",
+      "Reaction_Evidence_Helps",
+      "Reaction_Fragment_Relevant_NotEnough",
+      "Reaction_New_Observation",
+      "Reaction_No_Open",
+      "Reaction_Risk_Pushback",
+      "Reaction_Warmer_Guarded"
+    ],
+    "reactions_never_triggered": [
+      "Reaction_Less_Private"
+    ],
+    "branch_differentiation_count": 8,
+    "empty_noop_reaction_frequency": 0.133,
+    "delayed_reaction_frequency": 0.0,
+    "immediate_reaction_count": 60,
+    "delayed_reaction_count": 0,
+    "hint_usefulness_score": 0.6,
+    "action_context_sensitivity": 18,
+    "repeated_state_collapse_count": 0,
+    "contexts_actions_with_no_meaningful_difference": [
+      "Space_A_Evening::Action_Observe",
+      "Space_A_Evening::Action_Present_Evidence",
+      "Space_A_Evening::Action_Return_Later",
+      "Space_A_Morning::Action_Observe",
+      "Space_A_Morning::Action_Present_Evidence",
+      "Space_A_Morning::Action_Return_Later",
+      "Space_B_Evening::Action_Observe",
+      "Space_B_Evening::Action_Test_Boundary",
+      "Space_B_Night::Action_Ask",
+      "Space_B_Night::Action_Observe",
+      "Space_B_Night::Action_Present_Evidence",
+      "Space_B_Night::Action_Return_Later"
+    ],
+    "same_reaction_dominance": 0.3,
+    "dead_path_ratio": 0.8,
+    "readability_score": 0.688,
+    "loop_stagnation_warnings": []
+  },
+  "trace": [
+    {
+      "iteration_id": 1,
+      "step_index": 1,
+      "scenario_id": "Scenario_10_Memory_Log_Changes_Followup",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded.",
+        "Memory flag changed follow-up readiness."
+      ],
+      "notes": "A new observation is recorded.",
+      "next_hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 1,
+      "step_index": 2,
+      "scenario_id": "Scenario_10_Memory_Log_Changes_Followup",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded.",
+        "Memory flag changed follow-up readiness."
+      ],
+      "notes": "Timing and context align; response quality improves.",
+      "next_hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 1,
+      "step_index": 3,
+      "scenario_id": "Scenario_10_Memory_Log_Changes_Followup",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Present_Evidence",
+      "eligible_reactions": [
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Fragment_Relevant_NotEnough",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "The fragment matters here, but not yet enough.",
+      "next_hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 2,
+      "step_index": 1,
+      "scenario_id": "Scenario_03_Right_Action_No_Fragment",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Fragment_Relevant_NotEnough",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "The fragment matters here, but not yet enough. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 2,
+      "step_index": 2,
+      "scenario_id": "Scenario_03_Right_Action_No_Fragment",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 2,
+      "step_index": 3,
+      "scenario_id": "Scenario_03_Right_Action_No_Fragment",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 3,
+      "step_index": 1,
+      "scenario_id": "Scenario_02_Right_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves.",
+      "next_hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 3,
+      "step_index": 2,
+      "scenario_id": "Scenario_02_Right_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded.",
+      "next_hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 3,
+      "step_index": 3,
+      "scenario_id": "Scenario_02_Right_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves.",
+      "next_hidden_state": {
+        "trust": 0.6200000000000001,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 4,
+      "step_index": 1,
+      "scenario_id": "Scenario_07_Object_Helps",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Present_Evidence",
+      "eligible_reactions": [
+        "Reaction_Evidence_Helps",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Evidence_Helps",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Evidence-linked response unlocked."
+      ],
+      "notes": "A presented clue makes the response more specific. [night]",
+      "next_hidden_state": {
+        "trust": 0.5700000000000001,
+        "curiosity": 0.54,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 4,
+      "step_index": 2,
+      "scenario_id": "Scenario_07_Object_Helps",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5700000000000001,
+        "curiosity": 0.54,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [night]",
+      "next_hidden_state": {
+        "trust": 0.6300000000000001,
+        "curiosity": 0.54,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 4,
+      "step_index": 3,
+      "scenario_id": "Scenario_07_Object_Helps",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.6300000000000001,
+        "curiosity": 0.54,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded. [night]",
+      "next_hidden_state": {
+        "trust": 0.6300000000000001,
+        "curiosity": 0.72,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 5,
+      "step_index": 1,
+      "scenario_id": "Scenario_04_Context_Shift_Privacy",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Test_Boundary",
+      "eligible_reactions": [
+        "Reaction_Less_Private",
+        "Reaction_No_Open",
+        "Reaction_Risk_Pushback"
+      ],
+      "selected_reaction": "Reaction_Risk_Pushback",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Boundary resistance increased."
+      ],
+      "notes": "The response hardens after boundary pressure. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.42,
+        "curiosity": 0.5,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 5,
+      "step_index": 2,
+      "scenario_id": "Scenario_04_Context_Shift_Privacy",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.42,
+        "curiosity": 0.5,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.42,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 5,
+      "step_index": 3,
+      "scenario_id": "Scenario_04_Context_Shift_Privacy",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.42,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.48,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 6,
+      "step_index": 1,
+      "scenario_id": "Scenario_01_Wrong_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 6,
+      "step_index": 2,
+      "scenario_id": "Scenario_01_Wrong_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 6,
+      "step_index": 3,
+      "scenario_id": "Scenario_01_Wrong_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Return_Later",
+      "eligible_reactions": [
+        "Reaction_Delayed_Shift",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Delayed_Shift",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "This action changes later availability. [low-privacy, return-later]",
+      "next_hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 7,
+      "step_index": 1,
+      "scenario_id": "Scenario_06_Repeated_Action_Fatigue",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_No_Open",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "Nothing opens at this time. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 7,
+      "step_index": 2,
+      "scenario_id": "Scenario_06_Repeated_Action_Fatigue",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_No_Open",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "Nothing opens at this time. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.36,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 7,
+      "step_index": 3,
+      "scenario_id": "Scenario_06_Repeated_Action_Fatigue",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.36,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_No_Open",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "Nothing opens at this time. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.33999999999999997,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 8,
+      "step_index": 1,
+      "scenario_id": "Scenario_08_Object_Not_Enough",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Present_Evidence",
+      "eligible_reactions": [
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Fragment_Relevant_NotEnough",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "The fragment matters here, but not yet enough. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 8,
+      "step_index": 2,
+      "scenario_id": "Scenario_08_Object_Not_Enough",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_No_Open",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "Nothing opens at this time. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 8,
+      "step_index": 3,
+      "scenario_id": "Scenario_08_Object_Not_Enough",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Return_Later",
+      "eligible_reactions": [
+        "Reaction_Delayed_Shift",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Delayed_Shift",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "This action changes later availability. [low-privacy, return-later]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 9,
+      "step_index": 1,
+      "scenario_id": "Scenario_05_Delayed_Reaction",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.7,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Return_Later",
+      "eligible_reactions": [
+        "Reaction_Delayed_Shift",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Delayed_Shift",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "This action changes later availability. [return-later]",
+      "next_hidden_state": {
+        "trust": 0.7,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 9,
+      "step_index": 2,
+      "scenario_id": "Scenario_05_Delayed_Reaction",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.7,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Warmer_Guarded",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Trust increased slightly."
+      ],
+      "notes": "The reaction is warmer but still guarded.",
+      "next_hidden_state": {
+        "trust": 0.7999999999999999,
+        "curiosity": 0.6,
+        "tension": 0.26
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 9,
+      "step_index": 3,
+      "scenario_id": "Scenario_05_Delayed_Reaction",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.7999999999999999,
+        "curiosity": 0.6,
+        "tension": 0.26
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded.",
+      "next_hidden_state": {
+        "trust": 0.7999999999999999,
+        "curiosity": 0.7799999999999999,
+        "tension": 0.26
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 10,
+      "step_index": 1,
+      "scenario_id": "Scenario_09_Return_Later_Changes_Result",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.7,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [night]",
+      "next_hidden_state": {
+        "trust": 0.76,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 10,
+      "step_index": 2,
+      "scenario_id": "Scenario_09_Return_Later_Changes_Result",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.76,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Return_Later",
+      "eligible_reactions": [
+        "Reaction_Delayed_Shift",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Delayed_Shift",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "This action changes later availability. [night, return-later]",
+      "next_hidden_state": {
+        "trust": 0.76,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 10,
+      "step_index": 3,
+      "scenario_id": "Scenario_09_Return_Later_Changes_Result",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.76,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [night]",
+      "next_hidden_state": {
+        "trust": 0.8200000000000001,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 11,
+      "step_index": 1,
+      "scenario_id": "Scenario_02_Right_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves.",
+      "next_hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 11,
+      "step_index": 2,
+      "scenario_id": "Scenario_02_Right_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded.",
+      "next_hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 11,
+      "step_index": 3,
+      "scenario_id": "Scenario_02_Right_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves.",
+      "next_hidden_state": {
+        "trust": 0.6200000000000001,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 12,
+      "step_index": 1,
+      "scenario_id": "Scenario_07_Object_Helps",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Present_Evidence",
+      "eligible_reactions": [
+        "Reaction_Evidence_Helps",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Evidence_Helps",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Evidence-linked response unlocked."
+      ],
+      "notes": "A presented clue makes the response more specific. [night]",
+      "next_hidden_state": {
+        "trust": 0.5700000000000001,
+        "curiosity": 0.54,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 12,
+      "step_index": 2,
+      "scenario_id": "Scenario_07_Object_Helps",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5700000000000001,
+        "curiosity": 0.54,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [night]",
+      "next_hidden_state": {
+        "trust": 0.6300000000000001,
+        "curiosity": 0.54,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 12,
+      "step_index": 3,
+      "scenario_id": "Scenario_07_Object_Helps",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.6300000000000001,
+        "curiosity": 0.54,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded. [night]",
+      "next_hidden_state": {
+        "trust": 0.6300000000000001,
+        "curiosity": 0.72,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 13,
+      "step_index": 1,
+      "scenario_id": "Scenario_06_Repeated_Action_Fatigue",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_No_Open",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "Nothing opens at this time. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 13,
+      "step_index": 2,
+      "scenario_id": "Scenario_06_Repeated_Action_Fatigue",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_No_Open",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "Nothing opens at this time. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.36,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 13,
+      "step_index": 3,
+      "scenario_id": "Scenario_06_Repeated_Action_Fatigue",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.36,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_No_Open",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "Nothing opens at this time. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.33999999999999997,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 14,
+      "step_index": 1,
+      "scenario_id": "Scenario_01_Wrong_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 14,
+      "step_index": 2,
+      "scenario_id": "Scenario_01_Wrong_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 14,
+      "step_index": 3,
+      "scenario_id": "Scenario_01_Wrong_Time_With_Fragment",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Return_Later",
+      "eligible_reactions": [
+        "Reaction_Delayed_Shift",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Delayed_Shift",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "This action changes later availability. [low-privacy, return-later]",
+      "next_hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 15,
+      "step_index": 1,
+      "scenario_id": "Scenario_10_Memory_Log_Changes_Followup",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded.",
+        "Memory flag changed follow-up readiness."
+      ],
+      "notes": "A new observation is recorded.",
+      "next_hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 15,
+      "step_index": 2,
+      "scenario_id": "Scenario_10_Memory_Log_Changes_Followup",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded.",
+        "Memory flag changed follow-up readiness."
+      ],
+      "notes": "Timing and context align; response quality improves.",
+      "next_hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 15,
+      "step_index": 3,
+      "scenario_id": "Scenario_10_Memory_Log_Changes_Followup",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Present_Evidence",
+      "eligible_reactions": [
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Fragment_Relevant_NotEnough",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "The fragment matters here, but not yet enough.",
+      "next_hidden_state": {
+        "trust": 0.56,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.5
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 16,
+      "step_index": 1,
+      "scenario_id": "Scenario_09_Return_Later_Changes_Result",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.7,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [night]",
+      "next_hidden_state": {
+        "trust": 0.76,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 16,
+      "step_index": 2,
+      "scenario_id": "Scenario_09_Return_Later_Changes_Result",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.76,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Return_Later",
+      "eligible_reactions": [
+        "Reaction_Delayed_Shift",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Delayed_Shift",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "This action changes later availability. [night, return-later]",
+      "next_hidden_state": {
+        "trust": 0.76,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 16,
+      "step_index": 3,
+      "scenario_id": "Scenario_09_Return_Later_Changes_Result",
+      "time_context": {
+        "id": "Space_B_Night",
+        "space": "Space_B",
+        "time": "Night"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.76,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [night]",
+      "next_hidden_state": {
+        "trust": 0.8200000000000001,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 17,
+      "step_index": 1,
+      "scenario_id": "Scenario_03_Right_Action_No_Fragment",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Fragment_Relevant_NotEnough",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "The fragment matters here, but not yet enough. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 17,
+      "step_index": 2,
+      "scenario_id": "Scenario_03_Right_Action_No_Fragment",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 17,
+      "step_index": 3,
+      "scenario_id": "Scenario_03_Right_Action_No_Fragment",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1"
+      ],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.26,
+        "curiosity": 0.58,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 18,
+      "step_index": 1,
+      "scenario_id": "Scenario_08_Object_Not_Enough",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Present_Evidence",
+      "eligible_reactions": [
+        "Reaction_Fragment_Relevant_NotEnough",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Fragment_Relevant_NotEnough",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "The fragment matters here, but not yet enough. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 18,
+      "step_index": 2,
+      "scenario_id": "Scenario_08_Object_Not_Enough",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.4,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_No_Open",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "Nothing opens at this time. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 18,
+      "step_index": 3,
+      "scenario_id": "Scenario_08_Object_Not_Enough",
+      "time_context": {
+        "id": "Space_A_Morning",
+        "space": "Space_A",
+        "time": "Morning"
+      },
+      "known_fragments": [],
+      "hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Return_Later",
+      "eligible_reactions": [
+        "Reaction_Delayed_Shift",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Delayed_Shift",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "This action changes later availability. [low-privacy, return-later]",
+      "next_hidden_state": {
+        "trust": 0.2,
+        "curiosity": 0.38,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 19,
+      "step_index": 1,
+      "scenario_id": "Scenario_05_Delayed_Reaction",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.7,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Return_Later",
+      "eligible_reactions": [
+        "Reaction_Delayed_Shift",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_Delayed_Shift",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [],
+      "notes": "This action changes later availability. [return-later]",
+      "next_hidden_state": {
+        "trust": 0.7,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 19,
+      "step_index": 2,
+      "scenario_id": "Scenario_05_Delayed_Reaction",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.7,
+        "curiosity": 0.6,
+        "tension": 0.3
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Warmer_Guarded",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Trust increased slightly."
+      ],
+      "notes": "The reaction is warmer but still guarded.",
+      "next_hidden_state": {
+        "trust": 0.7999999999999999,
+        "curiosity": 0.6,
+        "tension": 0.26
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 19,
+      "step_index": 3,
+      "scenario_id": "Scenario_05_Delayed_Reaction",
+      "time_context": {
+        "id": "Space_A_Evening",
+        "space": "Space_A",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Fragment_2"
+      ],
+      "hidden_state": {
+        "trust": 0.7999999999999999,
+        "curiosity": 0.6,
+        "tension": 0.26
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded.",
+      "next_hidden_state": {
+        "trust": 0.7999999999999999,
+        "curiosity": 0.7799999999999999,
+        "tension": 0.26
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 20,
+      "step_index": 1,
+      "scenario_id": "Scenario_04_Context_Shift_Privacy",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.5,
+        "curiosity": 0.5,
+        "tension": 0.5
+      },
+      "chosen_action": "Action_Test_Boundary",
+      "eligible_reactions": [
+        "Reaction_Less_Private",
+        "Reaction_No_Open",
+        "Reaction_Risk_Pushback"
+      ],
+      "selected_reaction": "Reaction_Risk_Pushback",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Boundary resistance increased."
+      ],
+      "notes": "The response hardens after boundary pressure. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.42,
+        "curiosity": 0.5,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 20,
+      "step_index": 2,
+      "scenario_id": "Scenario_04_Context_Shift_Privacy",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.42,
+        "curiosity": 0.5,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Observe",
+      "eligible_reactions": [
+        "Reaction_New_Observation",
+        "Reaction_No_Open"
+      ],
+      "selected_reaction": "Reaction_New_Observation",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Observation candidate recorded."
+      ],
+      "notes": "A new observation is recorded. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.42,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    },
+    {
+      "iteration_id": 20,
+      "step_index": 3,
+      "scenario_id": "Scenario_04_Context_Shift_Privacy",
+      "time_context": {
+        "id": "Space_B_Evening",
+        "space": "Space_B",
+        "time": "Evening"
+      },
+      "known_fragments": [
+        "Fragment_1",
+        "Topic_1"
+      ],
+      "hidden_state": {
+        "trust": 0.42,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.6
+      },
+      "chosen_action": "Action_Ask",
+      "eligible_reactions": [
+        "Reaction_Context_Aligned",
+        "Reaction_No_Open",
+        "Reaction_Warmer_Guarded"
+      ],
+      "selected_reaction": "Reaction_Context_Aligned",
+      "source": "immediate",
+      "immediate_or_delayed": "immediate",
+      "newly_unlocked_information": [
+        "Context alignment signal recorded."
+      ],
+      "notes": "Timing and context align; response quality improves. [low-privacy]",
+      "next_hidden_state": {
+        "trust": 0.48,
+        "curiosity": 0.6799999999999999,
+        "tension": 0.6
+      },
+      "repeated_state_collapse": false
+    }
+  ]
+}

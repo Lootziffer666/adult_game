@@ -1,37 +1,63 @@
 # RESULTS_FORMAT
 
-## `latest_run.json`
-Contains:
-- `run_metadata`
-  - run name
-  - seed
-  - iterations
-  - max steps
-  - variation mode
-  - timestamp
-- `metrics`
-  - total_iterations
-  - total_steps
-  - unique_reactions_triggered
-  - unique_reaction_ids
-  - reactions_never_triggered
-  - branch_differentiation_count
-  - empty_noop_reaction_frequency
-  - delayed_reaction_frequency
-  - immediate_reaction_count
-  - delayed_reaction_count
-  - hint_usefulness_score
-  - action_context_sensitivity
-  - repeated_state_collapse_count
-  - loop_stagnation_warnings
-  - contexts_actions_with_no_meaningful_difference
-- `trace`
-  - per-step causality records
+## Standard outputs
 
-## Trace entry schema
+### `latest_run.json`
+Contains:
+- run metadata (`run_name`, `seed`, `scenario_repeats`)
+- candidate parameters
+- metrics
+- full trace
+
+### `latest_run.csv`
+Flat trace table with:
+- iteration/step/scenario
+- context
+- action
+- selected reaction
+- immediate/delayed
+- fragments
+- hidden-state snapshot
+- readable notes
+
+### `latest_run.md`
+Human summary for quick comparison.
+
+## Tuning outputs
+
+### `latest_tuning_report.json`
+Contains:
+- tuning metadata (generations, population, seed)
+- verdict (`overall`, `confidence`, scope-growth verdict)
+- baseline summary + score
+- best candidate summary + score
+- score delta
+- generation history
+
+### `latest_tuning_report.md`
+Human-facing verdict format:
+- `# TUNING VERDICT`
+- Overall: improved / worsened / unclear
+- Confidence: high / medium / low
+- baseline and best summaries
+- main improvements/regressions
+- parameter changes
+- scope-growth recommendation
+
+### `best_candidate.json`
+Contains:
+- best candidate parameters
+- best score and metrics
+- full best trace
+
+### `baseline_vs_best.md`
+Quick side-by-side metric delta view.
+
+## Trace schema (used in standard and best candidate traces)
 Each step includes:
 - `iteration_id`
 - `step_index`
+- `scenario_id`
 - `time_context`
 - `known_fragments`
 - `hidden_state`
@@ -41,24 +67,10 @@ Each step includes:
 - `source` (immediate/delayed)
 - `immediate_or_delayed`
 - `newly_unlocked_information`
-- `notes` (placeholder-readable)
+- `notes`
 - `next_hidden_state`
+- `repeated_state_collapse`
 
-## `latest_run.csv`
-Flat table for quick filtering/sorting:
-- iteration/step
-- context
-- action
-- selected reaction
-- immediate/delayed
-- fragments
-- hidden state snapshot
-- notes
-
-## `latest_run.md`
-Short comparison summary for humans:
-- metadata
-- key metrics
-- untriggered reactions
-- no-difference context/action pairs
-- stagnation warnings
+## Metrics emphasis
+Evaluation is multi-signal.
+Variable movement alone is not sufficient; readability proxies and differentiation metrics are included in tuning score.

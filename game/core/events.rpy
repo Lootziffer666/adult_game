@@ -23,20 +23,6 @@ init -10 python:
     def is_pending(eid):
         return eid in ws().pending_story
 
-    def trace_validation(message):
-        w = ws()
-        w.validation_trace.append(message)
-        # keep a small rolling window for readability
-        if len(w.validation_trace) > 40:
-            w.validation_trace = w.validation_trace[-40:]
-
-    def set_reaction_placeholder(text, source="system"):
-        w = ws()
-        w.last_reaction_placeholder = text
-        w.memory_log.append(text)
-        trace_validation(f"[{source}] {text}")
-
-
     def queue_delayed_effect(label, where=None, cond=None):
         """
         Minimal delayed consequence hook.
@@ -44,7 +30,6 @@ init -10 python:
         where: optional location whitelist.
         cond: optional callable(location_id)->bool.
         """
-        trace_validation(f"queue_delayed_effect:{label} where={where or []}")
         ws().delayed_effects.append({
             "label": label,
             "where": where or [],
@@ -69,7 +54,6 @@ init -10 python:
                 remaining.append(eff)
                 continue
 
-            trace_validation(f"resolve_delayed_effect:{eff['label']} at {location_id}")
             renpy.call(eff["label"])
             fired = True
 

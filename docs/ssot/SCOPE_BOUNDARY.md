@@ -1,27 +1,32 @@
 # SCOPE_BOUNDARY
 
-## Must-have now (current proof scope)
-- Ren'Py prototype loop that supports inference-based progression.
-- Context/timing-aware event triggering.
-- Hidden state + visible reaction pattern.
-- Lightweight player support layer (hint/goal/event-completion reminders).
-- At least minimal world reaction consequences that feed back into future interpretation.
+## Must-have now (lab proof scope)
+- Minimal Ren'Py prototype loop.
+- Timing/context-sensitive action evaluation.
+- Generic hidden world/relationship state.
+- At least one meaningful world-reaction path.
+- Hint/memory/goal/event-output support sufficient to avoid memory-only play.
+- Enough instrumentation to inspect repeat-attempt behavior.
 
 ## Allowed now (bounded)
-- Placeholder relationship roles (single or multiple) as functional scaffolding.
-- Bounded object/evidence logic:
-  - small item/evidence set,
-  - local interactions,
-  - context-sensitive use,
-  - no hoarding pressure.
-- Optional pressure modifiers (rumor/public/hygiene) if they improve the test.
-- Minimal debug tools for development only.
+- Lightweight UI guidance and memory/event log output.
+- Small object/evidence interactions with local, logical use.
+- Placeholder names/roles if explicitly non-canonical.
+- Debug-heavy scaffolding for validation runs.
+- Optional delayed consequence mechanism.
+
+> CONFLICT NOTE:
+> Previous docs assumed: fixed slice rhythms (including fixed room/beat expectations) as near-baseline.
+> Current lab-oriented reading is: slice rhythms are optional references; only loop-validity requirements are in scope.
+> Action needed: treat room count/beat order as test parameters, not SSOT commitments.
+> Status: moved
 
 ## Deferred / later
-- Final story canon.
-- Final setting canon.
-- Final character canon/biographies.
-- Heavy inventory-combinatorial puzzle chains.
-- Large systemic pressure stacks unless needed for proof.
-- Macro route architecture decisions for a future story phase.
-- Engine migration planning (including Godot-first planning) unless Ren'Py is demonstrably insufficient.
+- Fixed story canon.
+- Fixed setting canon.
+- Fixed final cast.
+- Full macro-route architecture.
+- Engine migration planning.
+- Broad city/world simulation.
+- Large inventory hauling/combinatorial chains.
+- Polished public-demo assumptions.

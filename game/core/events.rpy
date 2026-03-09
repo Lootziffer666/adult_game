@@ -92,9 +92,11 @@ init -10 python:
 
         elig = eligible_events(location_id)
         if not elig:
+            set_reaction_placeholder("The topic does not open under current conditions.", source="no_event")
             return False
 
         ev = elig[0]
+        trace_validation(f"trigger_best:{ev.eid} at {location_id}")
         clear_pending(ev.eid)
         renpy.call(ev.label)
         return True

@@ -13,6 +13,8 @@ screen map_screen():
             
             text "Tag [world.day] – [world.phase]" size 24 color "#fff"
             text "Zeit: [world.minutes // 60]:[(world.minutes % 60):02d]" size 18 color "#aaa"
+            text "Lab Ziel: [world.objective_stub]" size 14 color "#9ab"
+            text "Letzte Reaktion: [world.last_reaction_placeholder]" size 14 color "#bcd"
             
             null height 20
             

@@ -1,30 +1,39 @@
 # CORE_GAME_SPEC
 
-## Current phase (authoritative)
-The project is currently a **system-validation prototype**.
-Its purpose is to test whether narrative inference progression (interpretation + timing + context + world reaction) is actually fun and reliable.
+## Current lab state (authoritative)
+This repository is currently a **Ren'Py-first laboratory prototype**.
+Its job is to test a game-core hypothesis, not to ship a finalized narrative product.
 
-This is **not** yet a story-production phase.
+Core purpose now:
+- validate whether interpretation-based progression feels playable,
+- validate whether world reaction is readable,
+- validate whether repeated attempts stay meaningful.
 
-## What the project IS right now
-- A VN-style prototype in **Ren'Py-first** implementation.
-- A testbed for progression through interpretation, not explicit route-picking.
-- A design where player understanding should come from observed consequences, contextual shifts, and repeatable system behavior.
-- A prototype that may use placeholder roles/content as scaffolding while core interaction logic is validated.
+## What the project IS now
+- A systems-first experimental rig.
+- A VN-style interaction layer for hypothesis testing.
+- A prototype that may use placeholder setting/cast labels without canon commitment.
 
-## What the project is NOT right now
-- Not a finalized story canon.
-- Not a finalized cast canon.
-- Not a fixed world bible with locked setting details.
-- Not a classic visible-route chooser.
-- Not a heavy stat-management UI game.
-- Not a Godot-migration project (unless Ren'Py proves to be a hard blocker later).
+## What the project is NOT now
+- Not finalized story canon.
+- Not finalized setting canon.
+- Not finalized cast canon.
+- Not a fixed A/B route VN target.
+- Not a polished public demo scope.
+- Not a Godot migration plan (unless Ren'Py is later proven insufficient).
 
-## Current identity sentence
-**A narrative inference prototype with VN presentation, built to test whether progression via interpretation, timing, context, and world reaction works.**
+> CONFLICT NOTE:
+> Previous docs assumed: a stabilized small social-sim baseline with quasi-fixed slice structure.
+> Current lab-oriented reading is: only the hypothesis-validation rig is fixed; story/cast/slice structure are open.
+> Action needed: keep all canonical claims explicitly provisional unless re-validated.
+> Status: generalized
 
-## Truthfulness rules for this phase
-1. Keep claims narrow and testable.
-2. Mark uncertainty explicitly.
-3. Treat legacy vertical-slice content as references unless re-validated in this phase.
-4. Do not promote placeholder story/characters into canon by default.
+## Intentionally open (current phase)
+- Story frame and plot order.
+- Setting specificity level.
+- Final cast identity and count.
+- Future macro-route architecture.
+
+## Later full-game direction (not current SSOT)
+If hypothesis tests succeed, the project may later evolve into a fuller narrative game with stronger route/story structure.
+That later direction is deferred and must not be backfilled into present-tense SSOT.

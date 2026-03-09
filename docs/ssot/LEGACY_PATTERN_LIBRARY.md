@@ -1,23 +1,30 @@
 # LEGACY_PATTERN_LIBRARY
 
-This file stores reusable legacy patterns.
-**These are references, not current canon.**
+This file preserves useful historical patterns.
+These patterns are **reference material**, not current canon.
 
-## Legacy patterns worth preserving
-- Old A/B contrast structures (trust/containment vs risk/attraction) as interaction templates.
-- Public-friction -> private-aftermath cadence examples.
-- Vertical-slice room/event rhythms (including 3-room loops) as prototype references.
-- Emotional presentation patterns (dialog subtext, pacing, tension modulation).
-- Atmosphere/UI/animation references (minimal UI, subtle animation, material style cues).
+## Keep as reusable patterns
+- World reaction over visible stat-reward feedback.
+- Timing/context/inference-driven progression principles.
+- Public-friction -> private-aftermath cadence as a structural example.
+- Subtle UI/animation/emotion presentation principles.
+- Vertical-slice rhythm examples as test templates.
 
-## How to use these patterns safely
-1. Borrow structure, not canon facts.
-2. Re-validate each borrowed pattern against current prototype goals.
-3. Keep placeholders explicitly marked as placeholders.
-4. Do not infer final setting/cast/story from legacy slices.
+## Explicitly legacy (not current SSOT)
+- Fixed A/B dual-route assumptions.
+- Fixed cast identities from old slice drafts.
+- Fixed room count / fixed minute budget assumptions.
+- Story beat order treated as mandatory.
 
-## Keep archived (do not promote)
-- Fixed A/B route assumptions as present-tense truth.
-- Fixed 45-60 minute slice structure as mandatory.
-- Fixed legacy story beats as current canon.
-- Date-bound production promises and brand/logo materials as gameplay authority.
+> CONFLICT NOTE:
+> Previous docs assumed: old A/B slice logic could act as present-tense baseline.
+> Current lab-oriented reading is: old slice logic is a pattern source only.
+> Action needed: copy only reusable mechanics, not canon assumptions.
+> Status: legacy
+
+## Usage rule
+When borrowing from legacy:
+1. keep it generic,
+2. mark it temporary,
+3. test it against current lab hypothesis,
+4. discard if it adds canon lock-in without validation value.

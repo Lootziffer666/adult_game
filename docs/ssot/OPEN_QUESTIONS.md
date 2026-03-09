@@ -1,25 +1,24 @@
 # OPEN_QUESTIONS
 
-1. **Prototype setting skin:**
-   Keep steampunk as temporary skin, or move to a more neutral presentation during proof phase?
+## High-priority (current lab)
+1. How explicit should hint/memory/objective output be before it becomes over-guidance?
+2. What is the smallest acceptable object/evidence model that still supports interpretation gameplay?
+3. How much passive waiting/time-skipping is needed for readable context shifts?
+4. What minimum world reaction set is enough to prove the hypothesis beyond variable churn?
+5. How specific should the setting wrapper be during testing (abstract vs themed skin)?
+6. How much macro-route preparation (if any) is justified now without freezing story structure?
 
-2. **First playable test size:**
-   What is the smallest vertical test that still validates the inference loop?
+## Medium-priority
+7. Which debug/trace outputs should remain developer-only vs optionally visible in lab builds?
+8. What repeat-attempt metrics best indicate “playable loop” vs “chore loop”?
 
-3. **Hint/journal/event-output form:**
-   Which lightweight UX format should be used first (single feed, compact journal, objective cards, hybrid)?
+## Lower-priority for now
+9. Final cast identity questions.
+10. Final route architecture questions.
+11. Final production/polish format questions.
 
-4. **Functional relationship role count:**
-   Should first proof use one role, two roles, or more than two placeholder roles?
-
-5. **Bounded object/evidence depth:**
-   How much object/evidence interaction is needed in prototype v1 to test interpretation quality?
-
-6. **Optional pressure systems threshold:**
-   At what point do rumor/public/hygiene modifiers become necessary instead of optional?
-
-7. **Route-like macrostructure timing:**
-   When (if ever) should explicit macro-route structure return after system validation?
-
-8. **Ren'Py limitation criteria:**
-   What concrete failure conditions would justify evaluating a post-Ren'Py engine path?
+> CONFLICT NOTE:
+> Previous docs assumed: old slice-specific priorities (cast/route framing) were near-term blockers.
+> Current lab-oriented reading is: readability + loop validity decisions come first.
+> Action needed: keep open-question order tied to validation risk, not legacy structure.
+> Status: generalized

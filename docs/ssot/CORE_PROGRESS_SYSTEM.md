@@ -1,44 +1,50 @@
 # CORE_PROGRESS_SYSTEM
 
-## Core progression formula (current baseline)
+## Core loop under test
+`fragment / hint / observation -> interpretation -> timing + context -> action -> world reaction -> new information`
 
-`observation / hint -> interpretation -> timing + context -> action -> world reaction -> new information`
+Short form: `understanding -> action -> world reaction`.
 
-This loop is the main thing being validated.
+Prototype success requires both:
+1. coherent hidden-state transitions,
+2. human-readable reaction output that feels meaningful.
 
-## Required distinction: internal vs player-facing
+## Layer A — system / variable validation (required)
+The prototype must support inspection of:
+- hidden state changes,
+- timing/context condition checks,
+- trigger eligibility,
+- immediate vs delayed outcomes,
+- loop continuity across repeated attempts.
 
-### 1) Hidden internal state (system side)
-Examples:
-- Context/timing flags.
-- Relationship/reaction variables (placeholder-role compatible).
-- Event eligibility and delayed consequence state.
+Expected support:
+- trace logging,
+- debug visibility,
+- deterministic inspection where practical.
 
-These values can be hidden from normal player UI.
+## Layer B — placeholder reaction readability (required)
+The prototype must expose lightweight, non-canonical output such as:
+- short reaction placeholders,
+- context-result placeholders,
+- event outcome placeholders,
+- memory/hint placeholders.
 
-### 2) Player-facing evidence (experience side)
-The player still needs lightweight evidence that state changed, such as:
-- Changed dialogue tone or availability.
-- New hint/reminder line.
-- Updated event log/journal entry.
-- Altered world reaction cue.
+These are diagnostic outputs, not final narrative writing.
 
-The prototype is **not** memory-only by design.
+> CONFLICT NOTE:
+> Previous docs assumed: role-specific social progression (A/B/R-centered) as default structural framing.
+> Current lab-oriented reading is: role-specific stats are optional placeholders; the validated loop is the SSOT.
+> Action needed: keep progression language generic unless a role structure is explicitly re-selected.
+> Status: generalized
 
-## Mandatory baseline systems (for proof)
-1. Context + timing-sensitive event triggering.
-2. World reaction hooks that can change future information.
-3. Lightweight hint/goal/completion output so inference remains playable.
-4. Minimal delayed consequence behavior.
+## Optional supports (allowed)
+- lightweight hint/memory/goal output,
+- bounded object/evidence interactions,
+- optional delayed consequence support,
+- optional pressure modifiers (rumor/hygiene/public-standing).
 
-## Optional/deferred modifiers (not mandatory for shortest proof)
-- Rumor/public/hygiene pressure stacks.
-- Larger social reputation simulations.
-- Expanded multi-layer modifier systems.
-
-These are valid if they help the proof, but they are not required equally at baseline.
-
-## Non-goals for current progression proof
-- "Raise affection until scene unlock" as dominant loop.
-- Pure inventory-combination chain gameplay.
-- Explicit route picker as primary progression UX.
+## Deferred complexity
+- broad reputation simulation stacks,
+- fixed route architecture,
+- high-content progression trees,
+- heavy inventory-combination logic.

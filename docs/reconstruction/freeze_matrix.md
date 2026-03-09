@@ -1,16 +1,22 @@
-# Freeze Matrix (Updated)
+# Freeze Matrix (Lab-Oriented)
 
 | Topic | Current best reading | Supporting files | Contradicting files | Status (green/yellow/red) | Merge now? | Notes |
 |---|---|---|---|---|---|---|
-| Project phase | System-validation prototype, not story-production canon | Clarified direction, ssot updates | legacy story-forward slice docs | green | yes | Foundational framing |
-| Engine stance | Ren'Py-first until proven insufficient | Clarified direction + legacy engine docs | none strong | green | yes | No proactive migration plan |
-| Story canon status | No finalized story canon yet | Clarified direction + unresolved legacy contradictions | legacy docs asserting fixed beats | green | yes | Keep uncertainty explicit |
-| Character canon status | No finalized cast canon; placeholders allowed | Clarified direction + prototype role usage | legacy files with over-specified cast assumptions | green | yes | Do not over-promote A/B/R identities |
-| Core loop formula | observation/hint -> interpretation -> timing+context -> action -> reaction -> new info | Clarified direction | none strong | green | yes | Primary validation target |
-| Hint/goal/event output | Lightweight player-facing support is required | Clarified direction | memory-only interpretations | green | yes | Avoid heavy quest UI |
-| Object/evidence logic | Bounded object/evidence interactions are compatible | Clarified direction | old anti-item overreactions | green | yes | Ban brute-force chains, not all objects |
-| Pressure systems (rumor/public/hygiene) | Optional modifiers unless needed for proof | Clarified direction + scope docs | legacy stacks treating all as baseline | yellow | bounded | Add only when validation needs them |
-| Old 3-room slice structure | Useful legacy rhythm, not mandatory current canon | Vertical slice docs as references | none | yellow | no | Keep in pattern library only |
-| Old A/B route framing | Legacy structure reference, not current mandatory macro-route | legacy slice docs | clarified current phase | yellow | no | Revisit in later story phase |
-| Date-bound production plans | Planning artifacts, not SSOT truth | daily/task docs | none | red | no | Archive only |
-| Brand/logo docs | Non-game-canon material | brand docs | none | red | no | Keep separate from gameplay SSOT |
+| Project phase framing | System-validation lab, not fixed mini-game | CURRENT_PHASE_NOTE, CORE_GAME_SPEC | older slice-forward docs | green | yes | Primary framing |
+| Core loop hypothesis | observation/hint -> interpretation -> timing/context -> action -> reaction -> new information | CORE_PROGRESS_SYSTEM, LAB_HYPOTHESIS | none strong | green | yes | Main proof target |
+| Ren'Py stance | Ren'Py-first until real blocker appears | CORE_GAME_SPEC, SCOPE_BOUNDARY | none strong | green | yes | No migration precommit |
+| Story/cast/setting canon | intentionally open in current phase | CORE_GAME_SPEC, CURRENT_PHASE_NOTE | legacy docs with fixed assumptions | green | yes | Avoid premature canonization |
+| Hint/memory/objective layer | lightweight player-facing support is required | CORE_PROGRESS_SYSTEM, SYSTEMS_OVERVIEW | memory-only interpretations | green | yes | Required for readability validation |
+| Object/evidence logic | small bounded interactions allowed | SCOPE_BOUNDARY, SYSTEMS_OVERVIEW | anti-item overcorrections | green | yes | Ban bad adventure patterns, not all objects |
+| A/B slice structure | legacy reference, not current SSOT | LEGACY_PATTERN_LIBRARY | older vertical slice docs | red | no | Keep as pattern material only |
+| Fixed location/room count | test parameter, not canon | SCOPE_BOUNDARY, LEGACY_PATTERN_LIBRARY | fixed-room slice docs | red | no | Do not freeze |
+| Route-VN framing | future possibility, not present target | CORE_GAME_SPEC, OPEN_QUESTIONS | older route framing | red | no | Defer |
+| Pressure stacks (rumor/hygiene/public) | optional modifiers, not proof baseline | SYSTEMS_OVERVIEW, CORE_PROGRESS_SYSTEM | older social-sim-heavy docs | yellow | bounded | Include only when evidence demands |
+| Delayed consequences | useful prototype capability, not mandatory everywhere | SYSTEMS_OVERVIEW, CORE_PROGRESS_SYSTEM | none | yellow | bounded | Add where it improves tests |
+| Brand / timeline artifacts | non-SSOT for current lab | reconstruction inventory | none | red | no | Archive-only |
+
+> CONFLICT NOTE:
+> Previous docs assumed: parts of old vertical slice were still green by default.
+> Current lab-oriented reading is: old slice structure is legacy unless directly required by current validation goals.
+> Action needed: keep slice-derived assumptions red or yellow until re-proven.
+> Status: legacy

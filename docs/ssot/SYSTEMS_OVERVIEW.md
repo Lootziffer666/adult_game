@@ -12,7 +12,7 @@ This is the current **lab systems** list, not a final game architecture.
 
 ## 3) World-Reaction Trigger Layer (current)
 - Selects meaningful response based on context and hidden state.
-- Supports at least one immediate and one deferred reaction pathway (if needed by test).
+- Supports immediate reactions by default; deferred reactions are prototype-capable and added only when needed by the test.
 
 ## 4) Hint / Memory / Objective Output Layer (current)
 - Provides lightweight player-facing support.

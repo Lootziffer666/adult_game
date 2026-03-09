@@ -7,11 +7,11 @@ Its job is to test a game-core hypothesis, not to ship a finalized narrative pro
 Core purpose now:
 - validate whether interpretation-based progression feels playable,
 - validate whether world reaction is readable,
-- validate whether repeated attempts stay meaningful.
+- validate whether repeated failed attempts still produce learnable progress instead of chore loops.
 
 ## What the project IS now
 - A systems-first experimental rig.
-- A VN-style interaction layer for hypothesis testing.
+- A VN-style interaction shell for hypothesis testing (not a claim of a finished mini-VN).
 - A prototype that may use placeholder setting/cast labels without canon commitment.
 
 ## What the project is NOT now

@@ -10,7 +10,7 @@
 
 ## Medium-priority
 7. Which debug/trace outputs should remain developer-only vs optionally visible in lab builds?
-8. What repeat-attempt metrics best indicate “playable loop” vs “chore loop”?
+8. What repeat-attempt metrics best indicate “playable loop” vs “chore loop” under repeated failed attempts?
 
 ## Lower-priority for now
 9. Final cast identity questions.

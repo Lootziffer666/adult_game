@@ -9,10 +9,11 @@
 | Hint/memory/objective layer | lightweight player-facing support is required | CORE_PROGRESS_SYSTEM, SYSTEMS_OVERVIEW | memory-only interpretations | green | yes | Required for readability validation |
 | Object/evidence logic | small bounded interactions allowed | SCOPE_BOUNDARY, SYSTEMS_OVERVIEW | anti-item overcorrections | green | yes | Ban bad adventure patterns, not all objects |
 | A/B slice structure | legacy reference, not current SSOT | LEGACY_PATTERN_LIBRARY | older vertical slice docs | red | no | Keep as pattern material only |
+| Legacy cast specificity (A/B/R as fixed identities) | legacy unless re-selected in a later phase | CORE_GAME_SPEC, LEGACY_PATTERN_LIBRARY | older cast-forward slice docs | red | no | Keep placeholders non-canonical |
 | Fixed location/room count | test parameter, not canon | SCOPE_BOUNDARY, LEGACY_PATTERN_LIBRARY | fixed-room slice docs | red | no | Do not freeze |
 | Route-VN framing | future possibility, not present target | CORE_GAME_SPEC, OPEN_QUESTIONS | older route framing | red | no | Defer |
 | Pressure stacks (rumor/hygiene/public) | optional modifiers, not proof baseline | SYSTEMS_OVERVIEW, CORE_PROGRESS_SYSTEM | older social-sim-heavy docs | yellow | bounded | Include only when evidence demands |
-| Delayed consequences | useful prototype capability, not mandatory everywhere | SYSTEMS_OVERVIEW, CORE_PROGRESS_SYSTEM | none | yellow | bounded | Add where it improves tests |
+| Delayed consequences | useful prototype capability, not mandatory everywhere | SYSTEMS_OVERVIEW, CORE_PROGRESS_SYSTEM | none | yellow | bounded | Add only when readability/loop proof improves |
 | Brand / timeline artifacts | non-SSOT for current lab | reconstruction inventory | none | red | no | Archive-only |
 
 > CONFLICT NOTE:

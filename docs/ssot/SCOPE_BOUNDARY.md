@@ -5,7 +5,7 @@
 - Timing/context-sensitive action evaluation.
 - Generic hidden world/relationship state.
 - At least one meaningful world-reaction path.
-- Hint/memory/goal/event-output support sufficient to avoid memory-only play.
+- Hint/memory/goal/event-output support sufficient to keep reaction changes readable (without full quest design).
 - Enough instrumentation to inspect repeat-attempt behavior.
 
 ## Allowed now (bounded)
@@ -14,6 +14,7 @@
 - Placeholder names/roles if explicitly non-canonical.
 - Debug-heavy scaffolding for validation runs.
 - Optional delayed consequence mechanism.
+- Room count / beat order / cast count as test parameters, not SSOT commitments.
 
 > CONFLICT NOTE:
 > Previous docs assumed: fixed slice rhythms (including fixed room/beat expectations) as near-baseline.

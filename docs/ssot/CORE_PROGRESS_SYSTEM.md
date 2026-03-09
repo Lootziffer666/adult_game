@@ -9,6 +9,8 @@ Prototype success requires both:
 1. coherent hidden-state transitions,
 2. human-readable reaction output that feels meaningful.
 
+If only (1) is true, result is **partial validation**, not hypothesis success.
+
 ## Layer A — system / variable validation (required)
 The prototype must support inspection of:
 - hidden state changes,
@@ -41,7 +43,7 @@ These are diagnostic outputs, not final narrative writing.
 - lightweight hint/memory/goal output,
 - bounded object/evidence interactions,
 - optional delayed consequence support,
-- optional pressure modifiers (rumor/hygiene/public-standing).
+- optional pressure modifiers (rumor/hygiene/public-standing), only when they improve test clarity.
 
 ## Deferred complexity
 - broad reputation simulation stacks,

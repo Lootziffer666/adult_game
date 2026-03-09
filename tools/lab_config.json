@@ -1,12 +1,11 @@
 {
   "run_name": "baseline_lab",
   "seed": 42,
-  "iterations": 20,
+  "iterations": 30,
   "max_steps_per_iteration": 4,
   "variation_mode": "bounded",
   "delayed_reactions_enabled": true,
   "placeholder_text_enabled": true,
-  "object_evidence_enabled": true,
   "archive_results": true,
   "contexts": [
     {"id": "Space_A_Morning", "space": "Space_A", "time": "Morning", "privacy": 0.3},
@@ -15,86 +14,11 @@
     {"id": "Space_B_Night", "space": "Space_B", "time": "Night", "privacy": 0.8}
   ],
   "fragments": ["Fragment_1", "Fragment_2", "Topic_1"],
-  "actions": ["Action_Observe", "Action_Ask", "Action_Return_Later", "Action_Test_Boundary", "Action_Present_Evidence"],
+  "actions": ["Action_Observe", "Action_Ask", "Action_Return_Later", "Action_Test_Boundary"],
   "state_presets": [
     {"id": "Preset_Guarded", "trust": 0.2, "curiosity": 0.4, "tension": 0.6},
     {"id": "Preset_Balanced", "trust": 0.5, "curiosity": 0.5, "tension": 0.5},
     {"id": "Preset_Open", "trust": 0.7, "curiosity": 0.6, "tension": 0.3}
-  ],
-  "scenario_bundle": [
-    {
-      "id": "Scenario_01_Wrong_Time_With_Fragment",
-      "context_id": "Space_A_Morning",
-      "state_preset_id": "Preset_Guarded",
-      "known_fragments": ["Fragment_1"],
-      "action_sequence": ["Action_Ask", "Action_Observe", "Action_Return_Later"]
-    },
-    {
-      "id": "Scenario_02_Right_Time_With_Fragment",
-      "context_id": "Space_A_Evening",
-      "state_preset_id": "Preset_Balanced",
-      "known_fragments": ["Fragment_1"],
-      "action_sequence": ["Action_Ask", "Action_Observe", "Action_Ask"]
-    },
-    {
-      "id": "Scenario_03_Right_Action_No_Fragment",
-      "context_id": "Space_B_Evening",
-      "state_preset_id": "Preset_Guarded",
-      "known_fragments": [],
-      "action_sequence": ["Action_Ask", "Action_Observe", "Action_Ask"]
-    },
-    {
-      "id": "Scenario_04_Context_Shift_Privacy",
-      "context_id": "Space_B_Evening",
-      "state_preset_id": "Preset_Balanced",
-      "known_fragments": ["Topic_1"],
-      "action_sequence": ["Action_Test_Boundary", "Action_Observe", "Action_Ask"]
-    },
-    {
-      "id": "Scenario_05_Delayed_Reaction",
-      "context_id": "Space_A_Evening",
-      "state_preset_id": "Preset_Open",
-      "known_fragments": ["Fragment_2"],
-      "action_sequence": ["Action_Return_Later", "Action_Ask", "Action_Observe"]
-    },
-    {
-      "id": "Scenario_06_Repeated_Action_Fatigue",
-      "context_id": "Space_A_Morning",
-      "state_preset_id": "Preset_Guarded",
-      "known_fragments": ["Fragment_2"],
-      "action_sequence": ["Action_Ask", "Action_Ask", "Action_Ask"]
-    },
-    {
-      "id": "Scenario_07_Object_Helps",
-      "context_id": "Space_B_Night",
-      "state_preset_id": "Preset_Balanced",
-      "known_fragments": ["Fragment_1"],
-      "object_evidence": "Object_1",
-      "action_sequence": ["Action_Present_Evidence", "Action_Ask", "Action_Observe"]
-    },
-    {
-      "id": "Scenario_08_Object_Not_Enough",
-      "context_id": "Space_A_Morning",
-      "state_preset_id": "Preset_Guarded",
-      "known_fragments": [],
-      "object_evidence": "Object_1",
-      "action_sequence": ["Action_Present_Evidence", "Action_Ask", "Action_Return_Later"]
-    },
-    {
-      "id": "Scenario_09_Return_Later_Changes_Result",
-      "context_id": "Space_B_Night",
-      "state_preset_id": "Preset_Open",
-      "known_fragments": ["Fragment_1", "Topic_1"],
-      "action_sequence": ["Action_Ask", "Action_Return_Later", "Action_Ask"]
-    },
-    {
-      "id": "Scenario_10_Memory_Log_Changes_Followup",
-      "context_id": "Space_A_Evening",
-      "state_preset_id": "Preset_Balanced",
-      "known_fragments": ["Topic_1"],
-      "memory_flag": "Memory_1",
-      "action_sequence": ["Action_Observe", "Action_Ask", "Action_Present_Evidence"]
-    }
   ],
   "comparison_metrics": [
     "unique_reactions_triggered",
@@ -105,39 +29,6 @@
     "hint_usefulness_score",
     "action_context_sensitivity",
     "repeated_state_collapse_count",
-    "loop_stagnation_warnings",
-    "readability_score"
-  ],
-  "tuning": {
-    "enabled": true,
-    "generations": 6,
-    "population_size": 8,
-    "beam_width": 3,
-    "scenario_repeats": 2,
-    "mutation_strength": 0.12,
-    "base_parameters": {
-      "hint_weight": 1.0,
-      "context_weight": 1.0,
-      "timing_weight": 1.0,
-      "hidden_state_weight": 1.0,
-      "delayed_threshold": 0.55,
-      "no_op_penalty": 1.0,
-      "repeated_state_penalty": 1.0,
-      "differentiation_weight": 1.0,
-      "readability_weight": 1.0,
-      "object_evidence_weight": 1.0
-    },
-    "evaluation_weights": {
-      "unique_reactions_triggered": 1.5,
-      "branch_differentiation_count": 1.2,
-      "hint_usefulness_score": 1.2,
-      "action_context_sensitivity": 0.8,
-      "readability_score": 1.4,
-      "empty_noop_reaction_frequency": -2.0,
-      "repeated_state_collapse_count": -0.7,
-      "same_reaction_dominance": -1.6,
-      "dead_path_ratio": -1.2,
-      "delayed_usage_quality": 0.8
-    }
-  }
+    "loop_stagnation_warnings"
+  ]
 }

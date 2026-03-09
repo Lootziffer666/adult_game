@@ -7,6 +7,7 @@ label location_salon:
     "Dampf steigt aus einem kleinen Apparat an der Wand."
     
     $ triggered = trigger_best("salon")
+    $ update_world_context("salon")
     $ update_exclusivity()
     
     jump map_screen
@@ -20,6 +21,7 @@ label location_home:
     "Werkzeuge liegen ordentlich auf dem Tisch."
     
     $ triggered = trigger_best("home")
+    $ update_world_context("home")
     $ update_exclusivity()
     
     jump map_screen
@@ -33,6 +35,7 @@ label location_bridge:
     "Kühler Wind. Metallgeräusche."
     
     $ triggered = trigger_best("bridge")
+    $ update_world_context("bridge")
     $ update_exclusivity()
     
     jump map_screen

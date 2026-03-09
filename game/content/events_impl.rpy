@@ -22,7 +22,6 @@ label ev_public_friction:
                 $ world.rumor_heat["salon"] += 0.3
                 $ world.chars["B"].attraction += 0.3
                 $ queue_delayed_effect("ev_aftershock_rumor", where=["bridge", "home"])
-                $ set_reaction_placeholder("This action changes availability later, not immediately.", source="ev_public_friction")
                 
                 "„Du redest viel für jemanden ohne Substanz.""
                 "Der Raum wird still."
@@ -98,5 +97,4 @@ label ev_aftershock_rumor:
     "Später fällt dir auf, wie schnell sich Blicke herumsprechen."
     $ world.public_standing = max(-2.0, world.public_standing - 0.1)
     $ world.memory_log.append("Aftershock: public tension echoed beyond the original scene.")
-    $ set_reaction_placeholder("A delayed reaction is now visible in another context.", source="ev_aftershock_rumor")
     return

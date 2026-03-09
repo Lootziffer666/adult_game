@@ -37,8 +37,6 @@ init -10 python:
         context_tags: set = field(default_factory=set)
         memory_log: list = field(default_factory=list)
         objective_stub: str = "Observe reactions and identify patterns."
-        validation_trace: list = field(default_factory=list)
-        last_reaction_placeholder: str = "No new reaction recorded yet."
         
         # Exclusivity tension
         exclusivity_tension: float = 0.0
